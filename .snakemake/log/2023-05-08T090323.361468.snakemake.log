@@ -1,0 +1,4 @@
+NameError in file /home/cstansbu/git_repositories/pip-fucci/Snakefile, line 25:
+name 'outputDir' is not defined
+  File "/home/cstansbu/git_repositories/pip-fucci/Snakefile", line 25, in <module>
+  File "/home/cstansbu/git_repositories/pip-fucci/utils/utils.py", line 17, in getImageOutputPath

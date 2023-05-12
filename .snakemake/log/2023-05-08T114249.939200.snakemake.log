@@ -1,0 +1,3 @@
+NameError in file /home/cstansbu/git_repositories/pip-fucci/Snakefile, line 29:
+name 'imageIds' is not defined
+  File "/home/cstansbu/git_repositories/pip-fucci/Snakefile", line 29, in <module>

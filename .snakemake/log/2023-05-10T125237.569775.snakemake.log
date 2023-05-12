@@ -1,0 +1,78 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 36
+Rules claiming more threads will be scaled down.
+Job stats:
+job                    count    min threads    max threads
+-------------------  -------  -------------  -------------
+all                        1              1              1
+getBackground              2              1              1
+getMaskedBackground        2              1              1
+total                      5              1              1
+
+Select jobs to execute...
+
+[Wed May 10 12:52:39 2023]
+rule getBackground:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test.processed.tiff
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/background/test.processed.background.csv
+    jobid: 259
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/background/test.processed.background.csv
+    wildcards: iid=test, state=processed
+    resources: tmpdir=/tmp
+
+
+[Wed May 10 12:52:40 2023]
+rule getBackground:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test.raw.tiff
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/background/test.raw.background.csv
+    jobid: 258
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/background/test.raw.background.csv
+    wildcards: iid=test, state=raw
+    resources: tmpdir=/tmp
+
+
+[Wed May 10 12:52:40 2023]
+rule getMaskedBackground:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test.processed.tiff, /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test.segmented.tiff
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/background/test.processed.masked.background.csv
+    jobid: 261
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/background/test.processed.masked.background.csv
+    wildcards: iid=test, state=processed
+    resources: tmpdir=/tmp
+
+
+[Wed May 10 12:52:40 2023]
+rule getMaskedBackground:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test.raw.tiff, /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test.segmented.tiff
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/background/test.raw.masked.background.csv
+    jobid: 260
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/background/test.raw.masked.background.csv
+    wildcards: iid=test, state=raw
+    resources: tmpdir=/tmp
+
+[Wed May 10 12:53:10 2023]
+Finished job 259.
+1 of 5 steps (20%) done
+[Wed May 10 12:53:11 2023]
+Finished job 258.
+2 of 5 steps (40%) done
+[Wed May 10 12:53:30 2023]
+Finished job 260.
+3 of 5 steps (60%) done
+[Wed May 10 12:53:31 2023]
+Finished job 261.
+4 of 5 steps (80%) done
+Select jobs to execute...
+
+[Wed May 10 12:53:31 2023]
+localrule all:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/metadata/test.json, /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test.raw.tiff, /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test.segmented.tiff, /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test.processed.tiff, /scratch/indikar_root/indikar1/cstansbu/pf-test/background/test.raw.background.csv, /scratch/indikar_root/indikar1/cstansbu/pf-test/background/test.processed.background.csv, /scratch/indikar_root/indikar1/cstansbu/pf-test/background/test.raw.masked.background.csv, /scratch/indikar_root/indikar1/cstansbu/pf-test/background/test.processed.masked.background.csv
+    jobid: 0
+    reason: Input files updated by another job: /scratch/indikar_root/indikar1/cstansbu/pf-test/background/test.raw.masked.background.csv, /scratch/indikar_root/indikar1/cstansbu/pf-test/background/test.raw.background.csv, /scratch/indikar_root/indikar1/cstansbu/pf-test/background/test.processed.background.csv, /scratch/indikar_root/indikar1/cstansbu/pf-test/background/test.processed.masked.background.csv
+    resources: tmpdir=/tmp
+
+[Wed May 10 12:53:31 2023]
+Finished job 0.
+5 of 5 steps (100%) done
+Complete log: .snakemake/log/2023-05-10T125237.569775.snakemake.log

@@ -1,0 +1,34 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 36
+Rules claiming more threads will be scaled down.
+Job stats:
+job               count    min threads    max threads
+--------------  -------  -------------  -------------
+all                   1              1              1
+mergeTrackData        1              1              1
+total                 2              1              1
+
+Select jobs to execute...
+
+[Fri May 12 13:07:38 2023]
+rule mergeTrackData:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/tracks/test.tracks.raw.csv, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test.celldata.csv, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test.intensity_scores.csv
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/tracks/test.tracks.full.csv
+    jobid: 262
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/tracks/test.tracks.full.csv
+    wildcards: iid=test
+    resources: tmpdir=/tmp
+
+[Fri May 12 13:07:49 2023]
+Error in rule mergeTrackData:
+    jobid: 262
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/tracks/test.tracks.raw.csv, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test.celldata.csv, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test.intensity_scores.csv
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/tracks/test.tracks.full.csv
+    shell:
+        python scripts/mergeTrackInfo.py /scratch/indikar_root/indikar1/cstansbu/pf-test/tracks/test.tracks.full.csv /scratch/indikar_root/indikar1/cstansbu/pf-test/tracks/test.tracks.raw.csv /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test.celldata.csv /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test.intensity_scores.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2023-05-12T130737.118832.snakemake.log

@@ -1,0 +1,2 @@
+SyntaxError in file /home/cstansbu/git_repositories/pip-fucci/Snakefile, line 36:
+Command must be given as string after the shell keyword. (Snakefile, line 36)

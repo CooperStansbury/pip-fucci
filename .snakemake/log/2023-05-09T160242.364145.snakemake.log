@@ -1,0 +1,608 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 36
+Rules claiming more threads will be scaled down.
+Job stats:
+job           count    min threads    max threads
+----------  -------  -------------  -------------
+all               1              1              1
+preprocess      130              1              1
+segment         204              1              1
+total           335              1              1
+
+Select jobs to execute...
+
+[Tue May  9 16:02:45 2023]
+rule segment:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_92.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_92.segmented.tiff, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_92.data.csv
+    jobid: 346
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_92.segmented.tiff
+    wildcards: iid=test, tid=92
+    resources: tmpdir=/tmp
+
+
+[Tue May  9 16:02:46 2023]
+rule segment:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_148.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_148.segmented.tiff, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_148.data.csv
+    jobid: 402
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_148.segmented.tiff
+    wildcards: iid=test, tid=148
+    resources: tmpdir=/tmp
+
+
+[Tue May  9 16:02:46 2023]
+rule segment:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_204.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_204.segmented.tiff, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_204.data.csv
+    jobid: 458
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_204.segmented.tiff
+    wildcards: iid=test, tid=204
+    resources: tmpdir=/tmp
+
+
+[Tue May  9 16:02:46 2023]
+rule segment:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_121.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_121.segmented.tiff, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_121.data.csv
+    jobid: 375
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_121.segmented.tiff
+    wildcards: iid=test, tid=121
+    resources: tmpdir=/tmp
+
+
+[Tue May  9 16:02:46 2023]
+rule segment:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_177.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_177.segmented.tiff, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_177.data.csv
+    jobid: 431
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_177.segmented.tiff
+    wildcards: iid=test, tid=177
+    resources: tmpdir=/tmp
+
+
+[Tue May  9 16:02:46 2023]
+rule segment:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_2.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_2.segmented.tiff, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_2.data.csv
+    jobid: 256
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_2.segmented.tiff
+    wildcards: iid=test, tid=2
+    resources: tmpdir=/tmp
+
+
+[Tue May  9 16:02:46 2023]
+rule preprocess:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_149.raw.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_149.processed.tiff
+    jobid: 151
+    reason: Updated input files: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_149.raw.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    wildcards: iid=test, tid=149
+    resources: tmpdir=/tmp
+
+
+[Tue May  9 16:02:46 2023]
+rule segment:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_65.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_65.segmented.tiff, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_65.data.csv
+    jobid: 319
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_65.segmented.tiff
+    wildcards: iid=test, tid=65
+    resources: tmpdir=/tmp
+
+
+[Tue May  9 16:02:46 2023]
+rule segment:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_37.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_37.segmented.tiff, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_37.data.csv
+    jobid: 291
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_37.segmented.tiff
+    wildcards: iid=test, tid=37
+    resources: tmpdir=/tmp
+
+
+[Tue May  9 16:02:46 2023]
+rule segment:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_93.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_93.segmented.tiff, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_93.data.csv
+    jobid: 347
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_93.segmented.tiff
+    wildcards: iid=test, tid=93
+    resources: tmpdir=/tmp
+
+
+[Tue May  9 16:02:46 2023]
+rule segment:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_86.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_86.segmented.tiff, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_86.data.csv
+    jobid: 340
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_86.segmented.tiff
+    wildcards: iid=test, tid=86
+    resources: tmpdir=/tmp
+
+
+[Tue May  9 16:02:46 2023]
+rule segment:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_198.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_198.segmented.tiff, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_198.data.csv
+    jobid: 452
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_198.segmented.tiff
+    wildcards: iid=test, tid=198
+    resources: tmpdir=/tmp
+
+
+[Tue May  9 16:02:46 2023]
+rule segment:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_122.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_122.segmented.tiff, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_122.data.csv
+    jobid: 376
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_122.segmented.tiff
+    wildcards: iid=test, tid=122
+    resources: tmpdir=/tmp
+
+
+[Tue May  9 16:02:46 2023]
+rule segment:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_178.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_178.segmented.tiff, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_178.data.csv
+    jobid: 432
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_178.segmented.tiff
+    wildcards: iid=test, tid=178
+    resources: tmpdir=/tmp
+
+
+[Tue May  9 16:02:46 2023]
+rule segment:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_9.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_9.segmented.tiff, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_9.data.csv
+    jobid: 263
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_9.segmented.tiff
+    wildcards: iid=test, tid=9
+    resources: tmpdir=/tmp
+
+
+[Tue May  9 16:02:46 2023]
+rule segment:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_234.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_234.segmented.tiff, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_234.data.csv
+    jobid: 488
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_234.segmented.tiff
+    wildcards: iid=test, tid=234
+    resources: tmpdir=/tmp
+
+
+[Tue May  9 16:02:46 2023]
+rule segment:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_94.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_94.segmented.tiff, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_94.data.csv
+    jobid: 348
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_94.segmented.tiff
+    wildcards: iid=test, tid=94
+    resources: tmpdir=/tmp
+
+
+[Tue May  9 16:02:46 2023]
+rule segment:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_150.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_150.segmented.tiff, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_150.data.csv
+    jobid: 404
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_150.segmented.tiff
+    wildcards: iid=test, tid=150
+    resources: tmpdir=/tmp
+
+
+[Tue May  9 16:02:46 2023]
+rule preprocess:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_7.raw.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_7.processed.tiff
+    jobid: 9
+    reason: Updated input files: /home/cstansbu/git_repositories/pip-fucci/config/config.yaml, /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_7.raw.tiff
+    wildcards: iid=test, tid=7
+    resources: tmpdir=/tmp
+
+
+[Tue May  9 16:02:46 2023]
+rule segment:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_38.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_38.segmented.tiff, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_38.data.csv
+    jobid: 292
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_38.segmented.tiff
+    wildcards: iid=test, tid=38
+    resources: tmpdir=/tmp
+
+
+[Tue May  9 16:02:46 2023]
+rule preprocess:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_194.raw.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_194.processed.tiff
+    jobid: 196
+    reason: Updated input files: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_194.raw.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    wildcards: iid=test, tid=194
+    resources: tmpdir=/tmp
+
+
+[Tue May  9 16:02:46 2023]
+rule preprocess:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_250.raw.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_250.processed.tiff
+    jobid: 252
+    reason: Updated input files: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_250.raw.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    wildcards: iid=test, tid=250
+    resources: tmpdir=/tmp
+
+
+[Tue May  9 16:02:46 2023]
+rule segment:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_222.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_222.segmented.tiff, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_222.data.csv
+    jobid: 476
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_222.segmented.tiff
+    wildcards: iid=test, tid=222
+    resources: tmpdir=/tmp
+
+
+[Tue May  9 16:02:46 2023]
+rule segment:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_139.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_139.segmented.tiff, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_139.data.csv
+    jobid: 393
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_139.segmented.tiff
+    wildcards: iid=test, tid=139
+    resources: tmpdir=/tmp
+
+
+[Tue May  9 16:02:46 2023]
+rule segment:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_195.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_195.segmented.tiff, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_195.data.csv
+    jobid: 449
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_195.segmented.tiff
+    wildcards: iid=test, tid=195
+    resources: tmpdir=/tmp
+
+
+[Tue May  9 16:02:46 2023]
+rule preprocess:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_55.raw.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_55.processed.tiff
+    jobid: 57
+    reason: Updated input files: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_55.raw.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    wildcards: iid=test, tid=55
+    resources: tmpdir=/tmp
+
+
+[Tue May  9 16:02:46 2023]
+rule preprocess:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_111.raw.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_111.processed.tiff
+    jobid: 113
+    reason: Updated input files: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_111.raw.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    wildcards: iid=test, tid=111
+    resources: tmpdir=/tmp
+
+
+[Tue May  9 16:02:46 2023]
+rule preprocess:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_167.raw.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_167.processed.tiff
+    jobid: 169
+    reason: Updated input files: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_167.raw.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    wildcards: iid=test, tid=167
+    resources: tmpdir=/tmp
+
+
+[Tue May  9 16:02:46 2023]
+rule preprocess:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_223.raw.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_223.processed.tiff
+    jobid: 225
+    reason: Updated input files: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_223.raw.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    wildcards: iid=test, tid=223
+    resources: tmpdir=/tmp
+
+
+[Tue May  9 16:02:46 2023]
+rule preprocess:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_27.raw.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_27.processed.tiff
+    jobid: 29
+    reason: Updated input files: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_27.raw.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    wildcards: iid=test, tid=27
+    resources: tmpdir=/tmp
+
+
+[Tue May  9 16:02:46 2023]
+rule segment:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_175.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_175.segmented.tiff, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_175.data.csv
+    jobid: 429
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_175.segmented.tiff
+    wildcards: iid=test, tid=175
+    resources: tmpdir=/tmp
+
+
+[Tue May  9 16:02:46 2023]
+rule preprocess:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_203.raw.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_203.processed.tiff
+    jobid: 205
+    reason: Updated input files: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_203.raw.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    wildcards: iid=test, tid=203
+    resources: tmpdir=/tmp
+
+
+[Tue May  9 16:02:46 2023]
+rule segment:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_63.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_63.segmented.tiff, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_63.data.csv
+    jobid: 317
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_63.segmented.tiff
+    wildcards: iid=test, tid=63
+    resources: tmpdir=/tmp
+
+
+[Tue May  9 16:02:46 2023]
+rule segment:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_91.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_91.segmented.tiff, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_91.data.csv
+    jobid: 345
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_91.segmented.tiff
+    wildcards: iid=test, tid=91
+    resources: tmpdir=/tmp
+
+
+[Tue May  9 16:02:46 2023]
+rule segment:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_147.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_147.segmented.tiff, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_147.data.csv
+    jobid: 401
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_147.segmented.tiff
+    wildcards: iid=test, tid=147
+    resources: tmpdir=/tmp
+
+
+[Tue May  9 16:02:46 2023]
+rule segment:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_176.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_176.segmented.tiff, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_176.data.csv
+    jobid: 430
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_176.segmented.tiff
+    wildcards: iid=test, tid=176
+    resources: tmpdir=/tmp
+
+[Tue May  9 16:02:52 2023]
+Finished job 169.
+1 of 335 steps (0.3%) done
+Select jobs to execute...
+
+[Tue May  9 16:02:52 2023]
+rule segment:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_165.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_165.segmented.tiff, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_165.data.csv
+    jobid: 419
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_165.segmented.tiff
+    wildcards: iid=test, tid=165
+    resources: tmpdir=/tmp
+
+[Tue May  9 16:02:52 2023]
+Finished job 151.
+2 of 335 steps (1%) done
+Select jobs to execute...
+
+[Tue May  9 16:02:52 2023]
+rule segment:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_109.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_109.segmented.tiff, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_109.data.csv
+    jobid: 363
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_109.segmented.tiff
+    wildcards: iid=test, tid=109
+    resources: tmpdir=/tmp
+
+[Tue May  9 16:02:52 2023]
+Finished job 252.
+3 of 335 steps (1%) done
+Select jobs to execute...
+
+[Tue May  9 16:02:52 2023]
+rule preprocess:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_249.raw.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_249.processed.tiff
+    jobid: 251
+    reason: Updated input files: /home/cstansbu/git_repositories/pip-fucci/config/config.yaml, /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_249.raw.tiff
+    wildcards: iid=test, tid=249
+    resources: tmpdir=/tmp
+
+[Tue May  9 16:02:52 2023]
+Finished job 9.
+4 of 335 steps (1%) done
+Select jobs to execute...
+
+[Tue May  9 16:02:52 2023]
+rule segment:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_25.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_25.segmented.tiff, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_25.data.csv
+    jobid: 279
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_25.segmented.tiff
+    wildcards: iid=test, tid=25
+    resources: tmpdir=/tmp
+
+[Tue May  9 16:02:52 2023]
+Finished job 225.
+5 of 335 steps (1%) done
+Select jobs to execute...
+
+[Tue May  9 16:02:52 2023]
+rule segment:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_53.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_53.segmented.tiff, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_53.data.csv
+    jobid: 307
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_53.segmented.tiff
+    wildcards: iid=test, tid=53
+    resources: tmpdir=/tmp
+
+[Tue May  9 16:02:52 2023]
+Finished job 29.
+6 of 335 steps (2%) done
+Select jobs to execute...
+
+[Tue May  9 16:02:52 2023]
+rule segment:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_221.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_221.segmented.tiff, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_221.data.csv
+    jobid: 475
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_221.segmented.tiff
+    wildcards: iid=test, tid=221
+    resources: tmpdir=/tmp
+
+[Tue May  9 16:02:52 2023]
+Finished job 113.
+7 of 335 steps (2%) done
+Select jobs to execute...
+
+[Tue May  9 16:02:52 2023]
+rule preprocess:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_54.raw.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_54.processed.tiff
+    jobid: 56
+    reason: Updated input files: /home/cstansbu/git_repositories/pip-fucci/config/config.yaml, /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_54.raw.tiff
+    wildcards: iid=test, tid=54
+    resources: tmpdir=/tmp
+
+[Tue May  9 16:02:52 2023]
+Finished job 205.
+8 of 335 steps (2%) done
+Select jobs to execute...
+
+[Tue May  9 16:02:53 2023]
+rule segment:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_52.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_52.segmented.tiff, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_52.data.csv
+    jobid: 306
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_52.segmented.tiff
+    wildcards: iid=test, tid=52
+    resources: tmpdir=/tmp
+
+[Tue May  9 16:02:53 2023]
+Error in rule segment:
+    jobid: 488
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_234.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_234.segmented.tiff, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_234.data.csv
+    shell:
+        python scripts/segment.py /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_234.processed.tiff /home/cstansbu/git_repositories/pip-fucci/config/config.yaml /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_234.segmented.tiff /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_234.data.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue May  9 16:02:53 2023]
+Finished job 57.
+9 of 335 steps (3%) done
+[Tue May  9 16:02:53 2023]
+Finished job 196.
+10 of 335 steps (3%) done
+[Tue May  9 16:02:54 2023]
+Finished job 458.
+11 of 335 steps (3%) done
+[Tue May  9 16:02:54 2023]
+Finished job 263.
+12 of 335 steps (4%) done
+[Tue May  9 16:02:54 2023]
+Finished job 376.
+13 of 335 steps (4%) done
+[Tue May  9 16:02:54 2023]
+Finished job 432.
+14 of 335 steps (4%) done
+[Tue May  9 16:02:54 2023]
+Finished job 340.
+15 of 335 steps (4%) done
+[Tue May  9 16:02:54 2023]
+Finished job 319.
+16 of 335 steps (5%) done
+[Tue May  9 16:02:54 2023]
+Finished job 449.
+17 of 335 steps (5%) done
+[Tue May  9 16:02:54 2023]
+Finished job 430.
+18 of 335 steps (5%) done
+[Tue May  9 16:02:54 2023]
+Finished job 345.
+19 of 335 steps (6%) done
+[Tue May  9 16:02:54 2023]
+Finished job 256.
+20 of 335 steps (6%) done
+[Tue May  9 16:02:54 2023]
+Finished job 429.
+21 of 335 steps (6%) done
+[Tue May  9 16:02:54 2023]
+Finished job 404.
+22 of 335 steps (7%) done
+[Tue May  9 16:02:54 2023]
+Finished job 348.
+23 of 335 steps (7%) done
+[Tue May  9 16:02:54 2023]
+Finished job 317.
+24 of 335 steps (7%) done
+[Tue May  9 16:02:54 2023]
+Finished job 393.
+25 of 335 steps (7%) done
+[Tue May  9 16:02:54 2023]
+Finished job 346.
+26 of 335 steps (8%) done
+[Tue May  9 16:02:54 2023]
+Finished job 431.
+27 of 335 steps (8%) done
+[Tue May  9 16:02:54 2023]
+Finished job 452.
+28 of 335 steps (8%) done
+[Tue May  9 16:02:54 2023]
+Finished job 402.
+29 of 335 steps (9%) done
+[Tue May  9 16:02:54 2023]
+Finished job 375.
+30 of 335 steps (9%) done
+[Tue May  9 16:02:54 2023]
+Finished job 401.
+31 of 335 steps (9%) done
+[Tue May  9 16:02:54 2023]
+Finished job 476.
+32 of 335 steps (10%) done
+[Tue May  9 16:02:54 2023]
+Finished job 291.
+33 of 335 steps (10%) done
+[Tue May  9 16:02:54 2023]
+Finished job 347.
+34 of 335 steps (10%) done
+[Tue May  9 16:02:54 2023]
+Finished job 292.
+35 of 335 steps (10%) done
+[Tue May  9 16:02:57 2023]
+Finished job 419.
+36 of 335 steps (11%) done
+[Tue May  9 16:02:57 2023]
+Error in rule segment:
+    jobid: 306
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_52.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_52.segmented.tiff, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_52.data.csv
+    shell:
+        python scripts/segment.py /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_52.processed.tiff /home/cstansbu/git_repositories/pip-fucci/config/config.yaml /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_52.segmented.tiff /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test_52.data.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue May  9 16:02:57 2023]
+Finished job 363.
+37 of 335 steps (11%) done
+[Tue May  9 16:02:57 2023]
+Finished job 279.
+38 of 335 steps (11%) done
+[Tue May  9 16:02:58 2023]
+Finished job 307.
+39 of 335 steps (12%) done
+[Tue May  9 16:02:58 2023]
+Finished job 251.
+40 of 335 steps (12%) done
+[Tue May  9 16:02:58 2023]
+Finished job 475.
+41 of 335 steps (12%) done
+[Tue May  9 16:02:58 2023]
+Finished job 56.
+42 of 335 steps (13%) done
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2023-05-09T160242.364145.snakemake.log

@@ -1,0 +1,28 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 36
+Rules claiming more threads will be scaled down.
+Job stats:
+job          count    min threads    max threads
+---------  -------  -------------  -------------
+all              1              1              1
+getImages        1              1              1
+total            2              1              1
+
+Select jobs to execute...
+
+[Mon May  8 09:52:00 2023]
+rule getImages:
+    input: /nfs/turbo/umms-indikar/shared/projects/wound_healing/data/sync-unsync/20230502-BJPF-sync-A3-20m.ome.tiff
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test.tiff
+    jobid: 1
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test.tiff
+    resources: tmpdir=/tmp
+
+Waiting at most 5 seconds for missing files.
+MissingOutputException in rule getImages in file /home/cstansbu/git_repositories/pip-fucci/Snakefile, line 31:
+Job 1  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+/scratch/indikar_root/indikar1/cstansbu/pf-test/images/test.tiff
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2023-05-08T095159.611280.snakemake.log

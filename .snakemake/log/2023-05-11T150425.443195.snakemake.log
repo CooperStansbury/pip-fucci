@@ -1,0 +1,5 @@
+Building DAG of jobs...
+MissingInputException in rule all in file /home/cstansbu/git_repositories/pip-fucci/Snakefile, line 24:
+Missing input files for rule all:
+    affected files:
+        /scratch/indikar_root/indikar1/cstansbu/pf-test/tracks/test.tracks.csv

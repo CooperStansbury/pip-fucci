@@ -1,0 +1,699 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 36
+Rules claiming more threads will be scaled down.
+Job stats:
+job           count    min threads    max threads
+----------  -------  -------------  -------------
+all               1              1              1
+preprocess      252              1              1
+total           253              1              1
+
+Select jobs to execute...
+
+[Tue May  9 08:12:49 2023]
+rule preprocess:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_232.raw.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_232.processed.tiff
+    jobid: 233
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_232.processed.tiff
+    wildcards: imgId=test, tid=232
+    resources: tmpdir=/tmp
+
+
+[Tue May  9 08:12:49 2023]
+rule preprocess:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_176.raw.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_176.processed.tiff
+    jobid: 177
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_176.processed.tiff
+    wildcards: imgId=test, tid=176
+    resources: tmpdir=/tmp
+
+
+[Tue May  9 08:12:49 2023]
+rule preprocess:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_204.raw.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_204.processed.tiff
+    jobid: 205
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_204.processed.tiff
+    wildcards: imgId=test, tid=204
+    resources: tmpdir=/tmp
+
+
+[Tue May  9 08:12:49 2023]
+rule preprocess:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_31.raw.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_31.processed.tiff
+    jobid: 32
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_31.processed.tiff
+    wildcards: imgId=test, tid=31
+    resources: tmpdir=/tmp
+
+
+[Tue May  9 08:12:49 2023]
+rule preprocess:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_87.raw.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_87.processed.tiff
+    jobid: 88
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_87.processed.tiff
+    wildcards: imgId=test, tid=87
+    resources: tmpdir=/tmp
+
+
+[Tue May  9 08:12:49 2023]
+rule preprocess:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_143.raw.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_143.processed.tiff
+    jobid: 144
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_143.processed.tiff
+    wildcards: imgId=test, tid=143
+    resources: tmpdir=/tmp
+
+
+[Tue May  9 08:12:49 2023]
+rule preprocess:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_151.raw.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_151.processed.tiff
+    jobid: 152
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_151.processed.tiff
+    wildcards: imgId=test, tid=151
+    resources: tmpdir=/tmp
+
+
+[Tue May  9 08:12:49 2023]
+rule preprocess:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_95.raw.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_95.processed.tiff
+    jobid: 96
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_95.processed.tiff
+    wildcards: imgId=test, tid=95
+    resources: tmpdir=/tmp
+
+
+[Tue May  9 08:12:49 2023]
+rule preprocess:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_207.raw.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_207.processed.tiff
+    jobid: 208
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_207.processed.tiff
+    wildcards: imgId=test, tid=207
+    resources: tmpdir=/tmp
+
+
+[Tue May  9 08:12:49 2023]
+rule preprocess:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_67.raw.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_67.processed.tiff
+    jobid: 68
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_67.processed.tiff
+    wildcards: imgId=test, tid=67
+    resources: tmpdir=/tmp
+
+
+[Tue May  9 08:12:49 2023]
+rule preprocess:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_123.raw.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_123.processed.tiff
+    jobid: 124
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_123.processed.tiff
+    wildcards: imgId=test, tid=123
+    resources: tmpdir=/tmp
+
+
+[Tue May  9 08:12:49 2023]
+rule preprocess:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_179.raw.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_179.processed.tiff
+    jobid: 180
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_179.processed.tiff
+    wildcards: imgId=test, tid=179
+    resources: tmpdir=/tmp
+
+
+[Tue May  9 08:12:49 2023]
+rule preprocess:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_235.raw.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_235.processed.tiff
+    jobid: 236
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_235.processed.tiff
+    wildcards: imgId=test, tid=235
+    resources: tmpdir=/tmp
+
+
+[Tue May  9 08:12:49 2023]
+rule preprocess:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_8.raw.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_8.processed.tiff
+    jobid: 9
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_8.processed.tiff
+    wildcards: imgId=test, tid=8
+    resources: tmpdir=/tmp
+
+
+[Tue May  9 08:12:49 2023]
+rule preprocess:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_61.raw.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_61.processed.tiff
+    jobid: 62
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_61.processed.tiff
+    wildcards: imgId=test, tid=61
+    resources: tmpdir=/tmp
+
+
+[Tue May  9 08:12:49 2023]
+rule preprocess:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_40.raw.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_40.processed.tiff
+    jobid: 41
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_40.processed.tiff
+    wildcards: imgId=test, tid=40
+    resources: tmpdir=/tmp
+
+
+[Tue May  9 08:12:49 2023]
+rule preprocess:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_96.raw.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_96.processed.tiff
+    jobid: 97
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_96.processed.tiff
+    wildcards: imgId=test, tid=96
+    resources: tmpdir=/tmp
+
+
+[Tue May  9 08:12:49 2023]
+rule preprocess:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_152.raw.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_152.processed.tiff
+    jobid: 153
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_152.processed.tiff
+    wildcards: imgId=test, tid=152
+    resources: tmpdir=/tmp
+
+
+[Tue May  9 08:12:49 2023]
+rule preprocess:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_208.raw.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_208.processed.tiff
+    jobid: 209
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_208.processed.tiff
+    wildcards: imgId=test, tid=208
+    resources: tmpdir=/tmp
+
+
+[Tue May  9 08:12:49 2023]
+rule preprocess:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_9.raw.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_9.processed.tiff
+    jobid: 10
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_9.processed.tiff
+    wildcards: imgId=test, tid=9
+    resources: tmpdir=/tmp
+
+
+[Tue May  9 08:12:49 2023]
+rule preprocess:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_68.raw.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_68.processed.tiff
+    jobid: 69
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_68.processed.tiff
+    wildcards: imgId=test, tid=68
+    resources: tmpdir=/tmp
+
+
+[Tue May  9 08:12:49 2023]
+rule preprocess:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_124.raw.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_124.processed.tiff
+    jobid: 125
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_124.processed.tiff
+    wildcards: imgId=test, tid=124
+    resources: tmpdir=/tmp
+
+
+[Tue May  9 08:12:49 2023]
+rule preprocess:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_180.raw.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_180.processed.tiff
+    jobid: 181
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_180.processed.tiff
+    wildcards: imgId=test, tid=180
+    resources: tmpdir=/tmp
+
+
+[Tue May  9 08:12:49 2023]
+rule preprocess:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_236.raw.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_236.processed.tiff
+    jobid: 237
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_236.processed.tiff
+    wildcards: imgId=test, tid=236
+    resources: tmpdir=/tmp
+
+
+[Tue May  9 08:12:49 2023]
+rule preprocess:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_146.raw.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_146.processed.tiff
+    jobid: 147
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_146.processed.tiff
+    wildcards: imgId=test, tid=146
+    resources: tmpdir=/tmp
+
+
+[Tue May  9 08:12:49 2023]
+rule preprocess:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_202.raw.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_202.processed.tiff
+    jobid: 203
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_202.processed.tiff
+    wildcards: imgId=test, tid=202
+    resources: tmpdir=/tmp
+
+
+[Tue May  9 08:12:49 2023]
+rule preprocess:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_5.raw.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_5.processed.tiff
+    jobid: 6
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_5.processed.tiff
+    wildcards: imgId=test, tid=5
+    resources: tmpdir=/tmp
+
+
+[Tue May  9 08:12:49 2023]
+rule preprocess:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_63.raw.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_63.processed.tiff
+    jobid: 64
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_63.processed.tiff
+    wildcards: imgId=test, tid=63
+    resources: tmpdir=/tmp
+
+
+[Tue May  9 08:12:49 2023]
+rule preprocess:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_119.raw.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_119.processed.tiff
+    jobid: 120
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_119.processed.tiff
+    wildcards: imgId=test, tid=119
+    resources: tmpdir=/tmp
+
+
+[Tue May  9 08:12:49 2023]
+rule preprocess:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_175.raw.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_175.processed.tiff
+    jobid: 176
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_175.processed.tiff
+    wildcards: imgId=test, tid=175
+    resources: tmpdir=/tmp
+
+
+[Tue May  9 08:12:49 2023]
+rule preprocess:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_231.raw.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_231.processed.tiff
+    jobid: 232
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_231.processed.tiff
+    wildcards: imgId=test, tid=231
+    resources: tmpdir=/tmp
+
+
+[Tue May  9 08:12:49 2023]
+rule preprocess:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_35.raw.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_35.processed.tiff
+    jobid: 36
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_35.processed.tiff
+    wildcards: imgId=test, tid=35
+    resources: tmpdir=/tmp
+
+
+[Tue May  9 08:12:49 2023]
+rule preprocess:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_91.raw.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_91.processed.tiff
+    jobid: 92
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_91.processed.tiff
+    wildcards: imgId=test, tid=91
+    resources: tmpdir=/tmp
+
+
+[Tue May  9 08:12:49 2023]
+rule preprocess:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_147.raw.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_147.processed.tiff
+    jobid: 148
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_147.processed.tiff
+    wildcards: imgId=test, tid=147
+    resources: tmpdir=/tmp
+
+
+[Tue May  9 08:12:49 2023]
+rule preprocess:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_203.raw.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_203.processed.tiff
+    jobid: 204
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_203.processed.tiff
+    wildcards: imgId=test, tid=203
+    resources: tmpdir=/tmp
+
+
+[Tue May  9 08:12:49 2023]
+rule preprocess:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_148.raw.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_148.processed.tiff
+    jobid: 149
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_148.processed.tiff
+    wildcards: imgId=test, tid=148
+    resources: tmpdir=/tmp
+
+[Tue May  9 08:13:17 2023]
+Error in rule preprocess:
+    jobid: 62
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_61.raw.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_61.processed.tiff
+    shell:
+        python scripts/preprocess.py /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_61.raw.tiff /home/cstansbu/git_repositories/pip-fucci/config/config.yaml /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_61.processed.tiff
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue May  9 08:13:18 2023]
+Error in rule preprocess:
+    jobid: 236
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_235.raw.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_235.processed.tiff
+    shell:
+        python scripts/preprocess.py /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_235.raw.tiff /home/cstansbu/git_repositories/pip-fucci/config/config.yaml /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_235.processed.tiff
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue May  9 08:13:18 2023]
+Error in rule preprocess:
+    jobid: 144
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_143.raw.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_143.processed.tiff
+    shell:
+        python scripts/preprocess.py /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_143.raw.tiff /home/cstansbu/git_repositories/pip-fucci/config/config.yaml /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_143.processed.tiff
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue May  9 08:13:18 2023]
+Error in rule preprocess:
+    jobid: 64
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_63.raw.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_63.processed.tiff
+    shell:
+        python scripts/preprocess.py /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_63.raw.tiff /home/cstansbu/git_repositories/pip-fucci/config/config.yaml /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_63.processed.tiff
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue May  9 08:13:18 2023]
+Error in rule preprocess:
+    jobid: 205
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_204.raw.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_204.processed.tiff
+    shell:
+        python scripts/preprocess.py /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_204.raw.tiff /home/cstansbu/git_repositories/pip-fucci/config/config.yaml /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_204.processed.tiff
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue May  9 08:13:18 2023]
+Error in rule preprocess:
+    jobid: 153
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_152.raw.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_152.processed.tiff
+    shell:
+        python scripts/preprocess.py /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_152.raw.tiff /home/cstansbu/git_repositories/pip-fucci/config/config.yaml /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_152.processed.tiff
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue May  9 08:13:18 2023]
+Error in rule preprocess:
+    jobid: 9
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_8.raw.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_8.processed.tiff
+    shell:
+        python scripts/preprocess.py /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_8.raw.tiff /home/cstansbu/git_repositories/pip-fucci/config/config.yaml /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_8.processed.tiff
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue May  9 08:13:18 2023]
+Error in rule preprocess:
+    jobid: 232
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_231.raw.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_231.processed.tiff
+    shell:
+        python scripts/preprocess.py /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_231.raw.tiff /home/cstansbu/git_repositories/pip-fucci/config/config.yaml /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_231.processed.tiff
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue May  9 08:13:18 2023]
+Error in rule preprocess:
+    jobid: 176
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_175.raw.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_175.processed.tiff
+    shell:
+        python scripts/preprocess.py /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_175.raw.tiff /home/cstansbu/git_repositories/pip-fucci/config/config.yaml /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_175.processed.tiff
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue May  9 08:13:18 2023]
+Error in rule preprocess:
+    jobid: 180
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_179.raw.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_179.processed.tiff
+    shell:
+        python scripts/preprocess.py /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_179.raw.tiff /home/cstansbu/git_repositories/pip-fucci/config/config.yaml /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_179.processed.tiff
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue May  9 08:13:18 2023]
+Error in rule preprocess:
+    jobid: 125
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_124.raw.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_124.processed.tiff
+    shell:
+        python scripts/preprocess.py /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_124.raw.tiff /home/cstansbu/git_repositories/pip-fucci/config/config.yaml /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_124.processed.tiff
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue May  9 08:13:18 2023]
+Error in rule preprocess:
+    jobid: 36
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_35.raw.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_35.processed.tiff
+    shell:
+        python scripts/preprocess.py /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_35.raw.tiff /home/cstansbu/git_repositories/pip-fucci/config/config.yaml /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_35.processed.tiff
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue May  9 08:13:18 2023]
+Error in rule preprocess:
+    jobid: 152
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_151.raw.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_151.processed.tiff
+    shell:
+        python scripts/preprocess.py /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_151.raw.tiff /home/cstansbu/git_repositories/pip-fucci/config/config.yaml /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_151.processed.tiff
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue May  9 08:13:18 2023]
+Error in rule preprocess:
+    jobid: 10
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_9.raw.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_9.processed.tiff
+    shell:
+        python scripts/preprocess.py /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_9.raw.tiff /home/cstansbu/git_repositories/pip-fucci/config/config.yaml /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_9.processed.tiff
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue May  9 08:13:18 2023]
+Error in rule preprocess:
+    jobid: 149
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_148.raw.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_148.processed.tiff
+    shell:
+        python scripts/preprocess.py /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_148.raw.tiff /home/cstansbu/git_repositories/pip-fucci/config/config.yaml /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_148.processed.tiff
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue May  9 08:13:18 2023]
+Error in rule preprocess:
+    jobid: 237
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_236.raw.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_236.processed.tiff
+    shell:
+        python scripts/preprocess.py /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_236.raw.tiff /home/cstansbu/git_repositories/pip-fucci/config/config.yaml /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_236.processed.tiff
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue May  9 08:13:18 2023]
+Error in rule preprocess:
+    jobid: 177
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_176.raw.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_176.processed.tiff
+    shell:
+        python scripts/preprocess.py /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_176.raw.tiff /home/cstansbu/git_repositories/pip-fucci/config/config.yaml /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_176.processed.tiff
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue May  9 08:13:18 2023]
+Error in rule preprocess:
+    jobid: 120
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_119.raw.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_119.processed.tiff
+    shell:
+        python scripts/preprocess.py /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_119.raw.tiff /home/cstansbu/git_repositories/pip-fucci/config/config.yaml /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_119.processed.tiff
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue May  9 08:13:18 2023]
+Error in rule preprocess:
+    jobid: 181
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_180.raw.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_180.processed.tiff
+    shell:
+        python scripts/preprocess.py /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_180.raw.tiff /home/cstansbu/git_repositories/pip-fucci/config/config.yaml /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_180.processed.tiff
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue May  9 08:13:18 2023]
+Error in rule preprocess:
+    jobid: 203
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_202.raw.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_202.processed.tiff
+    shell:
+        python scripts/preprocess.py /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_202.raw.tiff /home/cstansbu/git_repositories/pip-fucci/config/config.yaml /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_202.processed.tiff
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue May  9 08:13:18 2023]
+Error in rule preprocess:
+    jobid: 69
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_68.raw.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_68.processed.tiff
+    shell:
+        python scripts/preprocess.py /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_68.raw.tiff /home/cstansbu/git_repositories/pip-fucci/config/config.yaml /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_68.processed.tiff
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue May  9 08:13:18 2023]
+Error in rule preprocess:
+    jobid: 6
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_5.raw.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_5.processed.tiff
+    shell:
+        python scripts/preprocess.py /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_5.raw.tiff /home/cstansbu/git_repositories/pip-fucci/config/config.yaml /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_5.processed.tiff
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue May  9 08:13:18 2023]
+Error in rule preprocess:
+    jobid: 96
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_95.raw.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_95.processed.tiff
+    shell:
+        python scripts/preprocess.py /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_95.raw.tiff /home/cstansbu/git_repositories/pip-fucci/config/config.yaml /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_95.processed.tiff
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue May  9 08:13:18 2023]
+Error in rule preprocess:
+    jobid: 41
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_40.raw.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_40.processed.tiff
+    shell:
+        python scripts/preprocess.py /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_40.raw.tiff /home/cstansbu/git_repositories/pip-fucci/config/config.yaml /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_40.processed.tiff
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue May  9 08:13:18 2023]
+Error in rule preprocess:
+    jobid: 208
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_207.raw.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_207.processed.tiff
+    shell:
+        python scripts/preprocess.py /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_207.raw.tiff /home/cstansbu/git_repositories/pip-fucci/config/config.yaml /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_207.processed.tiff
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue May  9 08:13:18 2023]
+Error in rule preprocess:
+    jobid: 68
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_67.raw.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_67.processed.tiff
+    shell:
+        python scripts/preprocess.py /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_67.raw.tiff /home/cstansbu/git_repositories/pip-fucci/config/config.yaml /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_67.processed.tiff
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue May  9 08:13:18 2023]
+Error in rule preprocess:
+    jobid: 147
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_146.raw.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_146.processed.tiff
+    shell:
+        python scripts/preprocess.py /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_146.raw.tiff /home/cstansbu/git_repositories/pip-fucci/config/config.yaml /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_146.processed.tiff
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue May  9 08:13:18 2023]
+Error in rule preprocess:
+    jobid: 204
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_203.raw.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_203.processed.tiff
+    shell:
+        python scripts/preprocess.py /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_203.raw.tiff /home/cstansbu/git_repositories/pip-fucci/config/config.yaml /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_203.processed.tiff
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue May  9 08:13:18 2023]
+Error in rule preprocess:
+    jobid: 97
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_96.raw.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_96.processed.tiff
+    shell:
+        python scripts/preprocess.py /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_96.raw.tiff /home/cstansbu/git_repositories/pip-fucci/config/config.yaml /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_96.processed.tiff
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue May  9 08:13:18 2023]
+Error in rule preprocess:
+    jobid: 209
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_208.raw.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_208.processed.tiff
+    shell:
+        python scripts/preprocess.py /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_208.raw.tiff /home/cstansbu/git_repositories/pip-fucci/config/config.yaml /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_208.processed.tiff
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue May  9 08:13:18 2023]
+Error in rule preprocess:
+    jobid: 88
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_87.raw.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_87.processed.tiff
+    shell:
+        python scripts/preprocess.py /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_87.raw.tiff /home/cstansbu/git_repositories/pip-fucci/config/config.yaml /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_87.processed.tiff
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue May  9 08:13:18 2023]
+Error in rule preprocess:
+    jobid: 92
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_91.raw.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_91.processed.tiff
+    shell:
+        python scripts/preprocess.py /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_91.raw.tiff /home/cstansbu/git_repositories/pip-fucci/config/config.yaml /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_91.processed.tiff
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue May  9 08:13:18 2023]
+Error in rule preprocess:
+    jobid: 148
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_147.raw.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_147.processed.tiff
+    shell:
+        python scripts/preprocess.py /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_147.raw.tiff /home/cstansbu/git_repositories/pip-fucci/config/config.yaml /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_147.processed.tiff
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue May  9 08:13:18 2023]
+Error in rule preprocess:
+    jobid: 32
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_31.raw.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_31.processed.tiff
+    shell:
+        python scripts/preprocess.py /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_31.raw.tiff /home/cstansbu/git_repositories/pip-fucci/config/config.yaml /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_31.processed.tiff
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue May  9 08:13:18 2023]
+Error in rule preprocess:
+    jobid: 124
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_123.raw.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_123.processed.tiff
+    shell:
+        python scripts/preprocess.py /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_123.raw.tiff /home/cstansbu/git_repositories/pip-fucci/config/config.yaml /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_123.processed.tiff
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue May  9 08:13:19 2023]
+Error in rule preprocess:
+    jobid: 233
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_232.raw.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_232.processed.tiff
+    shell:
+        python scripts/preprocess.py /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_232.raw.tiff /home/cstansbu/git_repositories/pip-fucci/config/config.yaml /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_232.processed.tiff
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2023-05-09T081247.488231.snakemake.log

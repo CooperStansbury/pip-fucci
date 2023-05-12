@@ -1,0 +1,88 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 36
+Rules claiming more threads will be scaled down.
+Job stats:
+job                    count    min threads    max threads
+-------------------  -------  -------------  -------------
+all                        1              1              1
+getMaskedBackground        1              1              1
+mergeTrackData             1              1              1
+score_intensities          1              1              1
+segment                    1              1              1
+track                      1              1              1
+total                      6              1              1
+
+Select jobs to execute...
+
+[Thu May 11 16:14:59 2023]
+rule segment:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test.segmented.tiff, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test.celldata.csv, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test.intensities.csv
+    jobid: 4
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test.intensities.csv
+    wildcards: iid=test
+    resources: tmpdir=/tmp
+
+[Thu May 11 16:28:58 2023]
+Finished job 4.
+1 of 6 steps (17%) done
+Select jobs to execute...
+
+[Thu May 11 16:28:58 2023]
+rule getMaskedBackground:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test.processed.tiff, /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test.segmented.tiff
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/background/test.masked.background.csv
+    jobid: 259
+    reason: Input files updated by another job: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test.segmented.tiff
+    wildcards: iid=test
+    resources: tmpdir=/tmp
+
+
+[Thu May 11 16:28:58 2023]
+rule track:
+    input: /home/cstansbu/BayesianTracker, /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test.processed.tiff, /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test.segmented.tiff, config/trackerConfig.json
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/tracks/test.tracks.raw.csv
+    jobid: 261
+    reason: Input files updated by another job: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test.segmented.tiff
+    wildcards: iid=test
+    resources: tmpdir=/tmp
+
+[Thu May 11 16:29:47 2023]
+Finished job 259.
+2 of 6 steps (33%) done
+Select jobs to execute...
+
+[Thu May 11 16:29:47 2023]
+rule score_intensities:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test.intensities.csv, /scratch/indikar_root/indikar1/cstansbu/pf-test/background/test.background.csv, /scratch/indikar_root/indikar1/cstansbu/pf-test/background/test.masked.background.csv
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test.intensity_scores.csv
+    jobid: 260
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test.intensity_scores.csv; Input files updated by another job: /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test.intensities.csv, /scratch/indikar_root/indikar1/cstansbu/pf-test/background/test.masked.background.csv
+    wildcards: iid=test
+    resources: tmpdir=/tmp
+
+[Thu May 11 16:30:48 2023]
+Finished job 260.
+3 of 6 steps (50%) done
+[Thu May 11 16:35:32 2023]
+Finished job 261.
+4 of 6 steps (67%) done
+Select jobs to execute...
+
+[Thu May 11 16:35:32 2023]
+rule mergeTrackData:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/tracks/test.tracks.raw.csv, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test.celldata.csv, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test.intensities.csv, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test.intensity_scores.csv
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/tracks/test.tracks.full.csv
+    jobid: 262
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/tracks/test.tracks.full.csv; Input files updated by another job: /scratch/indikar_root/indikar1/cstansbu/pf-test/tracks/test.tracks.raw.csv, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test.celldata.csv, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test.intensities.csv, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test.intensity_scores.csv
+    wildcards: iid=test
+    resources: tmpdir=/tmp
+
+Waiting at most 5 seconds for missing files.
+MissingOutputException in rule mergeTrackData in file /home/cstansbu/git_repositories/pip-fucci/Snakefile, line 52:
+Job 262  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+/scratch/indikar_root/indikar1/cstansbu/pf-test/tracks/test.tracks.full.csv
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2023-05-11T161455.875595.snakemake.log

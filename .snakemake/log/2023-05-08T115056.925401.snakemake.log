@@ -1,0 +1,519 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 36
+Rules claiming more threads will be scaled down.
+Job stats:
+job          count    min threads    max threads
+---------  -------  -------------  -------------
+all              1              1              1
+getImages      252              1              1
+total          253              1              1
+
+Select jobs to execute...
+
+[Mon May  8 11:51:00 2023]
+rule getImages:
+    input: /nfs/turbo/umms-indikar/shared/projects/wound_healing/data/sync-unsync/20230502-BJPF-sync-A3-20m.ome.tiff
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_176.tiff
+    jobid: 176
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_176.tiff
+    wildcards: iid=test, tid=176
+    resources: tmpdir=/tmp
+
+
+[Mon May  8 11:51:00 2023]
+rule getImages:
+    input: /nfs/turbo/umms-indikar/shared/projects/wound_healing/data/sync-unsync/20230502-BJPF-sync-A3-20m.ome.tiff
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_232.tiff
+    jobid: 232
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_232.tiff
+    wildcards: iid=test, tid=232
+    resources: tmpdir=/tmp
+
+
+[Mon May  8 11:51:00 2023]
+rule getImages:
+    input: /nfs/turbo/umms-indikar/shared/projects/wound_healing/data/sync-unsync/20230502-BJPF-sync-A3-20m.ome.tiff
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_31.tiff
+    jobid: 31
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_31.tiff
+    wildcards: iid=test, tid=31
+    resources: tmpdir=/tmp
+
+
+[Mon May  8 11:51:00 2023]
+rule getImages:
+    input: /nfs/turbo/umms-indikar/shared/projects/wound_healing/data/sync-unsync/20230502-BJPF-sync-A3-20m.ome.tiff
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_87.tiff
+    jobid: 87
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_87.tiff
+    wildcards: iid=test, tid=87
+    resources: tmpdir=/tmp
+
+
+[Mon May  8 11:51:00 2023]
+rule getImages:
+    input: /nfs/turbo/umms-indikar/shared/projects/wound_healing/data/sync-unsync/20230502-BJPF-sync-A3-20m.ome.tiff
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_143.tiff
+    jobid: 143
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_143.tiff
+    wildcards: iid=test, tid=143
+    resources: tmpdir=/tmp
+
+
+[Mon May  8 11:51:00 2023]
+rule getImages:
+    input: /nfs/turbo/umms-indikar/shared/projects/wound_healing/data/sync-unsync/20230502-BJPF-sync-A3-20m.ome.tiff
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_151.tiff
+    jobid: 151
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_151.tiff
+    wildcards: iid=test, tid=151
+    resources: tmpdir=/tmp
+
+
+[Mon May  8 11:51:00 2023]
+rule getImages:
+    input: /nfs/turbo/umms-indikar/shared/projects/wound_healing/data/sync-unsync/20230502-BJPF-sync-A3-20m.ome.tiff
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_95.tiff
+    jobid: 95
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_95.tiff
+    wildcards: iid=test, tid=95
+    resources: tmpdir=/tmp
+
+
+[Mon May  8 11:51:00 2023]
+rule getImages:
+    input: /nfs/turbo/umms-indikar/shared/projects/wound_healing/data/sync-unsync/20230502-BJPF-sync-A3-20m.ome.tiff
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_207.tiff
+    jobid: 207
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_207.tiff
+    wildcards: iid=test, tid=207
+    resources: tmpdir=/tmp
+
+
+[Mon May  8 11:51:00 2023]
+rule getImages:
+    input: /nfs/turbo/umms-indikar/shared/projects/wound_healing/data/sync-unsync/20230502-BJPF-sync-A3-20m.ome.tiff
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_67.tiff
+    jobid: 67
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_67.tiff
+    wildcards: iid=test, tid=67
+    resources: tmpdir=/tmp
+
+
+[Mon May  8 11:51:00 2023]
+rule getImages:
+    input: /nfs/turbo/umms-indikar/shared/projects/wound_healing/data/sync-unsync/20230502-BJPF-sync-A3-20m.ome.tiff
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_123.tiff
+    jobid: 123
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_123.tiff
+    wildcards: iid=test, tid=123
+    resources: tmpdir=/tmp
+
+
+[Mon May  8 11:51:00 2023]
+rule getImages:
+    input: /nfs/turbo/umms-indikar/shared/projects/wound_healing/data/sync-unsync/20230502-BJPF-sync-A3-20m.ome.tiff
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_179.tiff
+    jobid: 179
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_179.tiff
+    wildcards: iid=test, tid=179
+    resources: tmpdir=/tmp
+
+
+[Mon May  8 11:51:00 2023]
+rule getImages:
+    input: /nfs/turbo/umms-indikar/shared/projects/wound_healing/data/sync-unsync/20230502-BJPF-sync-A3-20m.ome.tiff
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_235.tiff
+    jobid: 235
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_235.tiff
+    wildcards: iid=test, tid=235
+    resources: tmpdir=/tmp
+
+
+[Mon May  8 11:51:00 2023]
+rule getImages:
+    input: /nfs/turbo/umms-indikar/shared/projects/wound_healing/data/sync-unsync/20230502-BJPF-sync-A3-20m.ome.tiff
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_7.tiff
+    jobid: 7
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_7.tiff
+    wildcards: iid=test, tid=7
+    resources: tmpdir=/tmp
+
+
+[Mon May  8 11:51:00 2023]
+rule getImages:
+    input: /nfs/turbo/umms-indikar/shared/projects/wound_healing/data/sync-unsync/20230502-BJPF-sync-A3-20m.ome.tiff
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_61.tiff
+    jobid: 61
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_61.tiff
+    wildcards: iid=test, tid=61
+    resources: tmpdir=/tmp
+
+
+[Mon May  8 11:51:00 2023]
+rule getImages:
+    input: /nfs/turbo/umms-indikar/shared/projects/wound_healing/data/sync-unsync/20230502-BJPF-sync-A3-20m.ome.tiff
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_40.tiff
+    jobid: 40
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_40.tiff
+    wildcards: iid=test, tid=40
+    resources: tmpdir=/tmp
+
+
+[Mon May  8 11:51:00 2023]
+rule getImages:
+    input: /nfs/turbo/umms-indikar/shared/projects/wound_healing/data/sync-unsync/20230502-BJPF-sync-A3-20m.ome.tiff
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_96.tiff
+    jobid: 96
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_96.tiff
+    wildcards: iid=test, tid=96
+    resources: tmpdir=/tmp
+
+
+[Mon May  8 11:51:00 2023]
+rule getImages:
+    input: /nfs/turbo/umms-indikar/shared/projects/wound_healing/data/sync-unsync/20230502-BJPF-sync-A3-20m.ome.tiff
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_152.tiff
+    jobid: 152
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_152.tiff
+    wildcards: iid=test, tid=152
+    resources: tmpdir=/tmp
+
+
+[Mon May  8 11:51:00 2023]
+rule getImages:
+    input: /nfs/turbo/umms-indikar/shared/projects/wound_healing/data/sync-unsync/20230502-BJPF-sync-A3-20m.ome.tiff
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_208.tiff
+    jobid: 208
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_208.tiff
+    wildcards: iid=test, tid=208
+    resources: tmpdir=/tmp
+
+
+[Mon May  8 11:51:00 2023]
+rule getImages:
+    input: /nfs/turbo/umms-indikar/shared/projects/wound_healing/data/sync-unsync/20230502-BJPF-sync-A3-20m.ome.tiff
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_8.tiff
+    jobid: 8
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_8.tiff
+    wildcards: iid=test, tid=8
+    resources: tmpdir=/tmp
+
+
+[Mon May  8 11:51:00 2023]
+rule getImages:
+    input: /nfs/turbo/umms-indikar/shared/projects/wound_healing/data/sync-unsync/20230502-BJPF-sync-A3-20m.ome.tiff
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_68.tiff
+    jobid: 68
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_68.tiff
+    wildcards: iid=test, tid=68
+    resources: tmpdir=/tmp
+
+
+[Mon May  8 11:51:00 2023]
+rule getImages:
+    input: /nfs/turbo/umms-indikar/shared/projects/wound_healing/data/sync-unsync/20230502-BJPF-sync-A3-20m.ome.tiff
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_124.tiff
+    jobid: 124
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_124.tiff
+    wildcards: iid=test, tid=124
+    resources: tmpdir=/tmp
+
+
+[Mon May  8 11:51:00 2023]
+rule getImages:
+    input: /nfs/turbo/umms-indikar/shared/projects/wound_healing/data/sync-unsync/20230502-BJPF-sync-A3-20m.ome.tiff
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_180.tiff
+    jobid: 180
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_180.tiff
+    wildcards: iid=test, tid=180
+    resources: tmpdir=/tmp
+
+
+[Mon May  8 11:51:00 2023]
+rule getImages:
+    input: /nfs/turbo/umms-indikar/shared/projects/wound_healing/data/sync-unsync/20230502-BJPF-sync-A3-20m.ome.tiff
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_236.tiff
+    jobid: 236
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_236.tiff
+    wildcards: iid=test, tid=236
+    resources: tmpdir=/tmp
+
+
+[Mon May  8 11:51:00 2023]
+rule getImages:
+    input: /nfs/turbo/umms-indikar/shared/projects/wound_healing/data/sync-unsync/20230502-BJPF-sync-A3-20m.ome.tiff
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_41.tiff
+    jobid: 41
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_41.tiff
+    wildcards: iid=test, tid=41
+    resources: tmpdir=/tmp
+
+
+[Mon May  8 11:51:00 2023]
+rule getImages:
+    input: /nfs/turbo/umms-indikar/shared/projects/wound_healing/data/sync-unsync/20230502-BJPF-sync-A3-20m.ome.tiff
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_90.tiff
+    jobid: 90
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_90.tiff
+    wildcards: iid=test, tid=90
+    resources: tmpdir=/tmp
+
+
+[Mon May  8 11:51:00 2023]
+rule getImages:
+    input: /nfs/turbo/umms-indikar/shared/projects/wound_healing/data/sync-unsync/20230502-BJPF-sync-A3-20m.ome.tiff
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_146.tiff
+    jobid: 146
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_146.tiff
+    wildcards: iid=test, tid=146
+    resources: tmpdir=/tmp
+
+
+[Mon May  8 11:51:00 2023]
+rule getImages:
+    input: /nfs/turbo/umms-indikar/shared/projects/wound_healing/data/sync-unsync/20230502-BJPF-sync-A3-20m.ome.tiff
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_202.tiff
+    jobid: 202
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_202.tiff
+    wildcards: iid=test, tid=202
+    resources: tmpdir=/tmp
+
+
+[Mon May  8 11:51:00 2023]
+rule getImages:
+    input: /nfs/turbo/umms-indikar/shared/projects/wound_healing/data/sync-unsync/20230502-BJPF-sync-A3-20m.ome.tiff
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_63.tiff
+    jobid: 63
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_63.tiff
+    wildcards: iid=test, tid=63
+    resources: tmpdir=/tmp
+
+
+[Mon May  8 11:51:00 2023]
+rule getImages:
+    input: /nfs/turbo/umms-indikar/shared/projects/wound_healing/data/sync-unsync/20230502-BJPF-sync-A3-20m.ome.tiff
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_119.tiff
+    jobid: 119
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_119.tiff
+    wildcards: iid=test, tid=119
+    resources: tmpdir=/tmp
+
+
+[Mon May  8 11:51:00 2023]
+rule getImages:
+    input: /nfs/turbo/umms-indikar/shared/projects/wound_healing/data/sync-unsync/20230502-BJPF-sync-A3-20m.ome.tiff
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_175.tiff
+    jobid: 175
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_175.tiff
+    wildcards: iid=test, tid=175
+    resources: tmpdir=/tmp
+
+
+[Mon May  8 11:51:00 2023]
+rule getImages:
+    input: /nfs/turbo/umms-indikar/shared/projects/wound_healing/data/sync-unsync/20230502-BJPF-sync-A3-20m.ome.tiff
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_231.tiff
+    jobid: 231
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_231.tiff
+    wildcards: iid=test, tid=231
+    resources: tmpdir=/tmp
+
+
+[Mon May  8 11:51:00 2023]
+rule getImages:
+    input: /nfs/turbo/umms-indikar/shared/projects/wound_healing/data/sync-unsync/20230502-BJPF-sync-A3-20m.ome.tiff
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_35.tiff
+    jobid: 35
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_35.tiff
+    wildcards: iid=test, tid=35
+    resources: tmpdir=/tmp
+
+
+[Mon May  8 11:51:00 2023]
+rule getImages:
+    input: /nfs/turbo/umms-indikar/shared/projects/wound_healing/data/sync-unsync/20230502-BJPF-sync-A3-20m.ome.tiff
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_91.tiff
+    jobid: 91
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_91.tiff
+    wildcards: iid=test, tid=91
+    resources: tmpdir=/tmp
+
+
+[Mon May  8 11:51:00 2023]
+rule getImages:
+    input: /nfs/turbo/umms-indikar/shared/projects/wound_healing/data/sync-unsync/20230502-BJPF-sync-A3-20m.ome.tiff
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_147.tiff
+    jobid: 147
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_147.tiff
+    wildcards: iid=test, tid=147
+    resources: tmpdir=/tmp
+
+
+[Mon May  8 11:51:00 2023]
+rule getImages:
+    input: /nfs/turbo/umms-indikar/shared/projects/wound_healing/data/sync-unsync/20230502-BJPF-sync-A3-20m.ome.tiff
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_203.tiff
+    jobid: 203
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_203.tiff
+    wildcards: iid=test, tid=203
+    resources: tmpdir=/tmp
+
+
+[Mon May  8 11:51:00 2023]
+rule getImages:
+    input: /nfs/turbo/umms-indikar/shared/projects/wound_healing/data/sync-unsync/20230502-BJPF-sync-A3-20m.ome.tiff
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_148.tiff
+    jobid: 148
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_148.tiff
+    wildcards: iid=test, tid=148
+    resources: tmpdir=/tmp
+
+Waiting at most 5 seconds for missing files.
+MissingOutputException in rule getImages in file /home/cstansbu/git_repositories/pip-fucci/Snakefile, line 39:
+Job 96  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+/scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_96.tiff
+Waiting at most 5 seconds for missing files.
+MissingOutputException in rule getImages in file /home/cstansbu/git_repositories/pip-fucci/Snakefile, line 39:
+Job 208  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+/scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_208.tiff
+Waiting at most 5 seconds for missing files.
+MissingOutputException in rule getImages in file /home/cstansbu/git_repositories/pip-fucci/Snakefile, line 39:
+Job 148  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+/scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_148.tiff
+Waiting at most 5 seconds for missing files.
+MissingOutputException in rule getImages in file /home/cstansbu/git_repositories/pip-fucci/Snakefile, line 39:
+Job 202  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+/scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_202.tiff
+Waiting at most 5 seconds for missing files.
+MissingOutputException in rule getImages in file /home/cstansbu/git_repositories/pip-fucci/Snakefile, line 39:
+Job 68  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+/scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_68.tiff
+Waiting at most 5 seconds for missing files.
+MissingOutputException in rule getImages in file /home/cstansbu/git_repositories/pip-fucci/Snakefile, line 39:
+Job 180  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+/scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_180.tiff
+Waiting at most 5 seconds for missing files.
+MissingOutputException in rule getImages in file /home/cstansbu/git_repositories/pip-fucci/Snakefile, line 39:
+Job 95  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+/scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_95.tiff
+Waiting at most 5 seconds for missing files.
+MissingOutputException in rule getImages in file /home/cstansbu/git_repositories/pip-fucci/Snakefile, line 39:
+Job 203  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+/scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_203.tiff
+Waiting at most 5 seconds for missing files.
+MissingOutputException in rule getImages in file /home/cstansbu/git_repositories/pip-fucci/Snakefile, line 39:
+Job 175  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+/scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_175.tiff
+Waiting at most 5 seconds for missing files.
+MissingOutputException in rule getImages in file /home/cstansbu/git_repositories/pip-fucci/Snakefile, line 39:
+Job 41  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+/scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_41.tiff
+Waiting at most 5 seconds for missing files.
+MissingOutputException in rule getImages in file /home/cstansbu/git_repositories/pip-fucci/Snakefile, line 39:
+Job 176  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+/scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_176.tiff
+Waiting at most 5 seconds for missing files.
+MissingOutputException in rule getImages in file /home/cstansbu/git_repositories/pip-fucci/Snakefile, line 39:
+Job 8  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+/scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_8.tiff
+Waiting at most 5 seconds for missing files.
+MissingOutputException in rule getImages in file /home/cstansbu/git_repositories/pip-fucci/Snakefile, line 39:
+Job 119  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+/scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_119.tiff
+Waiting at most 5 seconds for missing files.
+MissingOutputException in rule getImages in file /home/cstansbu/git_repositories/pip-fucci/Snakefile, line 39:
+Job 231  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+/scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_231.tiff
+Waiting at most 5 seconds for missing files.
+MissingOutputException in rule getImages in file /home/cstansbu/git_repositories/pip-fucci/Snakefile, line 39:
+Job 67  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+/scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_67.tiff
+Waiting at most 5 seconds for missing files.
+MissingOutputException in rule getImages in file /home/cstansbu/git_repositories/pip-fucci/Snakefile, line 39:
+Job 147  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+/scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_147.tiff
+Waiting at most 5 seconds for missing files.
+MissingOutputException in rule getImages in file /home/cstansbu/git_repositories/pip-fucci/Snakefile, line 39:
+Job 35  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+/scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_35.tiff
+Waiting at most 5 seconds for missing files.
+MissingOutputException in rule getImages in file /home/cstansbu/git_repositories/pip-fucci/Snakefile, line 39:
+Job 90  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+/scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_90.tiff
+Waiting at most 5 seconds for missing files.
+MissingOutputException in rule getImages in file /home/cstansbu/git_repositories/pip-fucci/Snakefile, line 39:
+Job 179  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+/scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_179.tiff
+Waiting at most 5 seconds for missing files.
+MissingOutputException in rule getImages in file /home/cstansbu/git_repositories/pip-fucci/Snakefile, line 39:
+Job 63  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+/scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_63.tiff
+Waiting at most 5 seconds for missing files.
+MissingOutputException in rule getImages in file /home/cstansbu/git_repositories/pip-fucci/Snakefile, line 39:
+Job 232  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+/scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_232.tiff
+Waiting at most 5 seconds for missing files.
+MissingOutputException in rule getImages in file /home/cstansbu/git_repositories/pip-fucci/Snakefile, line 39:
+Job 143  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+/scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_143.tiff
+Waiting at most 5 seconds for missing files.
+MissingOutputException in rule getImages in file /home/cstansbu/git_repositories/pip-fucci/Snakefile, line 39:
+Job 123  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+/scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_123.tiff
+Waiting at most 5 seconds for missing files.
+MissingOutputException in rule getImages in file /home/cstansbu/git_repositories/pip-fucci/Snakefile, line 39:
+Job 40  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+/scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_40.tiff
+Waiting at most 5 seconds for missing files.
+MissingOutputException in rule getImages in file /home/cstansbu/git_repositories/pip-fucci/Snakefile, line 39:
+Job 91  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+/scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_91.tiff
+Waiting at most 5 seconds for missing files.
+MissingOutputException in rule getImages in file /home/cstansbu/git_repositories/pip-fucci/Snakefile, line 39:
+Job 207  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+/scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_207.tiff
+Waiting at most 5 seconds for missing files.
+MissingOutputException in rule getImages in file /home/cstansbu/git_repositories/pip-fucci/Snakefile, line 39:
+Job 7  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+/scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_7.tiff
+Waiting at most 5 seconds for missing files.
+MissingOutputException in rule getImages in file /home/cstansbu/git_repositories/pip-fucci/Snakefile, line 39:
+Job 31  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+/scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_31.tiff
+Waiting at most 5 seconds for missing files.
+MissingOutputException in rule getImages in file /home/cstansbu/git_repositories/pip-fucci/Snakefile, line 39:
+Job 61  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+/scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_61.tiff
+Waiting at most 5 seconds for missing files.
+MissingOutputException in rule getImages in file /home/cstansbu/git_repositories/pip-fucci/Snakefile, line 39:
+Job 235  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+/scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_235.tiff
+Waiting at most 5 seconds for missing files.
+MissingOutputException in rule getImages in file /home/cstansbu/git_repositories/pip-fucci/Snakefile, line 39:
+Job 124  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+/scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_124.tiff
+Waiting at most 5 seconds for missing files.
+MissingOutputException in rule getImages in file /home/cstansbu/git_repositories/pip-fucci/Snakefile, line 39:
+Job 152  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+/scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_152.tiff
+Waiting at most 5 seconds for missing files.
+MissingOutputException in rule getImages in file /home/cstansbu/git_repositories/pip-fucci/Snakefile, line 39:
+Job 151  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+/scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_151.tiff
+Waiting at most 5 seconds for missing files.
+MissingOutputException in rule getImages in file /home/cstansbu/git_repositories/pip-fucci/Snakefile, line 39:
+Job 236  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+/scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_236.tiff
+Waiting at most 5 seconds for missing files.
+MissingOutputException in rule getImages in file /home/cstansbu/git_repositories/pip-fucci/Snakefile, line 39:
+Job 87  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+/scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_87.tiff
+Waiting at most 5 seconds for missing files.
+MissingOutputException in rule getImages in file /home/cstansbu/git_repositories/pip-fucci/Snakefile, line 39:
+Job 146  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+/scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_146.tiff
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2023-05-08T115056.925401.snakemake.log

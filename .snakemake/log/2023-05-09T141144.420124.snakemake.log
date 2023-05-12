@@ -1,0 +1,699 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 36
+Rules claiming more threads will be scaled down.
+Job stats:
+job        count    min threads    max threads
+-------  -------  -------------  -------------
+all            1              1              1
+segment      252              1              1
+total        253              1              1
+
+Select jobs to execute...
+
+[Tue May  9 14:11:45 2023]
+rule segment:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_147.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_147.segmented.npy, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_147.csv
+    jobid: 401
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_147.segmented.npy
+    wildcards: iid=test, tid=147
+    resources: tmpdir=/tmp
+
+
+[Tue May  9 14:11:46 2023]
+rule segment:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_203.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_203.segmented.npy, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_203.csv
+    jobid: 457
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_203.segmented.npy
+    wildcards: iid=test, tid=203
+    resources: tmpdir=/tmp
+
+[Tue May  9 14:11:46 2023]
+Error in rule segment:
+    jobid: 401
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_147.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_147.segmented.npy, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_147.csv
+    shell:
+        python scripts/segement.py /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_147.processed.tiff /home/cstansbu/git_repositories/pip-fucci/config/config.yaml /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_147.segmented.npy /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_147.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+
+[Tue May  9 14:11:46 2023]
+rule segment:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_114.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_114.segmented.npy, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_114.csv
+    jobid: 368
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_114.segmented.npy
+    wildcards: iid=test, tid=114
+    resources: tmpdir=/tmp
+
+
+[Tue May  9 14:11:46 2023]
+rule segment:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_170.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_170.segmented.npy, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_170.csv
+    jobid: 424
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_170.segmented.npy
+    wildcards: iid=test, tid=170
+    resources: tmpdir=/tmp
+
+[Tue May  9 14:11:46 2023]
+Error in rule segment:
+    jobid: 457
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_203.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_203.segmented.npy, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_203.csv
+    shell:
+        python scripts/segement.py /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_203.processed.tiff /home/cstansbu/git_repositories/pip-fucci/config/config.yaml /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_203.segmented.npy /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_203.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+
+[Tue May  9 14:11:46 2023]
+rule segment:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_226.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_226.segmented.npy, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_226.csv
+    jobid: 480
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_226.segmented.npy
+    wildcards: iid=test, tid=226
+    resources: tmpdir=/tmp
+
+[Tue May  9 14:11:46 2023]
+Error in rule segment:
+    jobid: 368
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_114.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_114.segmented.npy, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_114.csv
+    shell:
+        python scripts/segement.py /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_114.processed.tiff /home/cstansbu/git_repositories/pip-fucci/config/config.yaml /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_114.segmented.npy /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_114.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+
+[Tue May  9 14:11:46 2023]
+rule segment:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_122.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_122.segmented.npy, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_122.csv
+    jobid: 376
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_122.segmented.npy
+    wildcards: iid=test, tid=122
+    resources: tmpdir=/tmp
+
+[Tue May  9 14:11:46 2023]
+Error in rule segment:
+    jobid: 424
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_170.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_170.segmented.npy, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_170.csv
+    shell:
+        python scripts/segement.py /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_170.processed.tiff /home/cstansbu/git_repositories/pip-fucci/config/config.yaml /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_170.segmented.npy /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_170.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+
+[Tue May  9 14:11:46 2023]
+rule segment:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_66.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_66.segmented.npy, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_66.csv
+    jobid: 320
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_66.segmented.npy
+    wildcards: iid=test, tid=66
+    resources: tmpdir=/tmp
+
+[Tue May  9 14:11:46 2023]
+Error in rule segment:
+    jobid: 480
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_226.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_226.segmented.npy, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_226.csv
+    shell:
+        python scripts/segement.py /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_226.processed.tiff /home/cstansbu/git_repositories/pip-fucci/config/config.yaml /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_226.segmented.npy /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_226.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+
+[Tue May  9 14:11:46 2023]
+rule segment:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_178.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_178.segmented.npy, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_178.csv
+    jobid: 432
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_178.segmented.npy
+    wildcards: iid=test, tid=178
+    resources: tmpdir=/tmp
+
+[Tue May  9 14:11:46 2023]
+Error in rule segment:
+    jobid: 376
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_122.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_122.segmented.npy, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_122.csv
+    shell:
+        python scripts/segement.py /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_122.processed.tiff /home/cstansbu/git_repositories/pip-fucci/config/config.yaml /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_122.segmented.npy /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_122.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+
+[Tue May  9 14:11:46 2023]
+rule segment:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_234.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_234.segmented.npy, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_234.csv
+    jobid: 488
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_234.segmented.npy
+    wildcards: iid=test, tid=234
+    resources: tmpdir=/tmp
+
+[Tue May  9 14:11:46 2023]
+Error in rule segment:
+    jobid: 320
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_66.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_66.segmented.npy, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_66.csv
+    shell:
+        python scripts/segement.py /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_66.processed.tiff /home/cstansbu/git_repositories/pip-fucci/config/config.yaml /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_66.segmented.npy /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_66.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue May  9 14:11:46 2023]
+Error in rule segment:
+    jobid: 432
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_178.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_178.segmented.npy, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_178.csv
+    shell:
+        python scripts/segement.py /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_178.processed.tiff /home/cstansbu/git_repositories/pip-fucci/config/config.yaml /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_178.segmented.npy /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_178.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+
+[Tue May  9 14:11:47 2023]
+rule segment:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_94.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_94.segmented.npy, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_94.csv
+    jobid: 348
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_94.segmented.npy
+    wildcards: iid=test, tid=94
+    resources: tmpdir=/tmp
+
+[Tue May  9 14:11:47 2023]
+Error in rule segment:
+    jobid: 488
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_234.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_234.segmented.npy, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_234.csv
+    shell:
+        python scripts/segement.py /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_234.processed.tiff /home/cstansbu/git_repositories/pip-fucci/config/config.yaml /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_234.segmented.npy /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_234.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+
+[Tue May  9 14:11:47 2023]
+rule segment:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_150.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_150.segmented.npy, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_150.csv
+    jobid: 404
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_150.segmented.npy
+    wildcards: iid=test, tid=150
+    resources: tmpdir=/tmp
+
+
+[Tue May  9 14:11:47 2023]
+rule segment:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_206.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_206.segmented.npy, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_206.csv
+    jobid: 460
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_206.segmented.npy
+    wildcards: iid=test, tid=206
+    resources: tmpdir=/tmp
+
+[Tue May  9 14:11:47 2023]
+Error in rule segment:
+    jobid: 348
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_94.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_94.segmented.npy, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_94.csv
+    shell:
+        python scripts/segement.py /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_94.processed.tiff /home/cstansbu/git_repositories/pip-fucci/config/config.yaml /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_94.segmented.npy /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_94.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue May  9 14:11:47 2023]
+Error in rule segment:
+    jobid: 404
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_150.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_150.segmented.npy, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_150.csv
+    shell:
+        python scripts/segement.py /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_150.processed.tiff /home/cstansbu/git_repositories/pip-fucci/config/config.yaml /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_150.segmented.npy /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_150.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+
+[Tue May  9 14:11:47 2023]
+rule segment:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_38.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_38.segmented.npy, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_38.csv
+    jobid: 292
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_38.segmented.npy
+    wildcards: iid=test, tid=38
+    resources: tmpdir=/tmp
+
+
+[Tue May  9 14:11:47 2023]
+rule segment:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_144.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_144.segmented.npy, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_144.csv
+    jobid: 398
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_144.segmented.npy
+    wildcards: iid=test, tid=144
+    resources: tmpdir=/tmp
+
+[Tue May  9 14:11:47 2023]
+Error in rule segment:
+    jobid: 460
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_206.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_206.segmented.npy, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_206.csv
+    shell:
+        python scripts/segement.py /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_206.processed.tiff /home/cstansbu/git_repositories/pip-fucci/config/config.yaml /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_206.segmented.npy /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_206.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue May  9 14:11:47 2023]
+Error in rule segment:
+    jobid: 292
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_38.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_38.segmented.npy, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_38.csv
+    shell:
+        python scripts/segement.py /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_38.processed.tiff /home/cstansbu/git_repositories/pip-fucci/config/config.yaml /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_38.segmented.npy /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_38.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+
+[Tue May  9 14:11:47 2023]
+rule segment:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_10.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_10.segmented.npy, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_10.csv
+    jobid: 264
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_10.segmented.npy
+    wildcards: iid=test, tid=10
+    resources: tmpdir=/tmp
+
+[Tue May  9 14:11:47 2023]
+Error in rule segment:
+    jobid: 398
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_144.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_144.segmented.npy, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_144.csv
+    shell:
+        python scripts/segement.py /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_144.processed.tiff /home/cstansbu/git_repositories/pip-fucci/config/config.yaml /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_144.segmented.npy /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_144.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+
+[Tue May  9 14:11:47 2023]
+rule segment:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_67.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_67.segmented.npy, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_67.csv
+    jobid: 321
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_67.segmented.npy
+    wildcards: iid=test, tid=67
+    resources: tmpdir=/tmp
+
+
+[Tue May  9 14:11:47 2023]
+rule segment:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_123.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_123.segmented.npy, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_123.csv
+    jobid: 377
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_123.segmented.npy
+    wildcards: iid=test, tid=123
+    resources: tmpdir=/tmp
+
+[Tue May  9 14:11:47 2023]
+Error in rule segment:
+    jobid: 264
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_10.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_10.segmented.npy, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_10.csv
+    shell:
+        python scripts/segement.py /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_10.processed.tiff /home/cstansbu/git_repositories/pip-fucci/config/config.yaml /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_10.segmented.npy /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_10.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue May  9 14:11:47 2023]
+Error in rule segment:
+    jobid: 321
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_67.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_67.segmented.npy, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_67.csv
+    shell:
+        python scripts/segement.py /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_67.processed.tiff /home/cstansbu/git_repositories/pip-fucci/config/config.yaml /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_67.segmented.npy /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_67.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+
+[Tue May  9 14:11:47 2023]
+rule segment:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_179.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_179.segmented.npy, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_179.csv
+    jobid: 433
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_179.segmented.npy
+    wildcards: iid=test, tid=179
+    resources: tmpdir=/tmp
+
+[Tue May  9 14:11:47 2023]
+Error in rule segment:
+    jobid: 377
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_123.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_123.segmented.npy, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_123.csv
+    shell:
+        python scripts/segement.py /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_123.processed.tiff /home/cstansbu/git_repositories/pip-fucci/config/config.yaml /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_123.segmented.npy /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_123.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+
+[Tue May  9 14:11:47 2023]
+rule segment:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_235.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_235.segmented.npy, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_235.csv
+    jobid: 489
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_235.segmented.npy
+    wildcards: iid=test, tid=235
+    resources: tmpdir=/tmp
+
+
+[Tue May  9 14:11:47 2023]
+rule segment:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_39.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_39.segmented.npy, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_39.csv
+    jobid: 293
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_39.segmented.npy
+    wildcards: iid=test, tid=39
+    resources: tmpdir=/tmp
+
+[Tue May  9 14:11:47 2023]
+Error in rule segment:
+    jobid: 433
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_179.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_179.segmented.npy, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_179.csv
+    shell:
+        python scripts/segement.py /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_179.processed.tiff /home/cstansbu/git_repositories/pip-fucci/config/config.yaml /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_179.segmented.npy /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_179.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue May  9 14:11:47 2023]
+Error in rule segment:
+    jobid: 489
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_235.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_235.segmented.npy, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_235.csv
+    shell:
+        python scripts/segement.py /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_235.processed.tiff /home/cstansbu/git_repositories/pip-fucci/config/config.yaml /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_235.segmented.npy /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_235.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+
+[Tue May  9 14:11:47 2023]
+rule segment:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_95.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_95.segmented.npy, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_95.csv
+    jobid: 349
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_95.segmented.npy
+    wildcards: iid=test, tid=95
+    resources: tmpdir=/tmp
+
+[Tue May  9 14:11:47 2023]
+Error in rule segment:
+    jobid: 293
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_39.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_39.segmented.npy, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_39.csv
+    shell:
+        python scripts/segement.py /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_39.processed.tiff /home/cstansbu/git_repositories/pip-fucci/config/config.yaml /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_39.segmented.npy /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_39.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+
+[Tue May  9 14:11:47 2023]
+rule segment:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_151.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_151.segmented.npy, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_151.csv
+    jobid: 405
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_151.segmented.npy
+    wildcards: iid=test, tid=151
+    resources: tmpdir=/tmp
+
+[Tue May  9 14:11:47 2023]
+Error in rule segment:
+    jobid: 349
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_95.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_95.segmented.npy, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_95.csv
+    shell:
+        python scripts/segement.py /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_95.processed.tiff /home/cstansbu/git_repositories/pip-fucci/config/config.yaml /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_95.segmented.npy /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_95.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+
+[Tue May  9 14:11:47 2023]
+rule segment:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_207.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_207.segmented.npy, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_207.csv
+    jobid: 461
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_207.segmented.npy
+    wildcards: iid=test, tid=207
+    resources: tmpdir=/tmp
+
+
+[Tue May  9 14:11:47 2023]
+rule segment:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_12.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_12.segmented.npy, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_12.csv
+    jobid: 266
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_12.segmented.npy
+    wildcards: iid=test, tid=12
+    resources: tmpdir=/tmp
+
+[Tue May  9 14:11:47 2023]
+Error in rule segment:
+    jobid: 405
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_151.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_151.segmented.npy, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_151.csv
+    shell:
+        python scripts/segement.py /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_151.processed.tiff /home/cstansbu/git_repositories/pip-fucci/config/config.yaml /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_151.segmented.npy /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_151.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+
+[Tue May  9 14:11:47 2023]
+rule segment:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_173.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_173.segmented.npy, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_173.csv
+    jobid: 427
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_173.segmented.npy
+    wildcards: iid=test, tid=173
+    resources: tmpdir=/tmp
+
+[Tue May  9 14:11:47 2023]
+Error in rule segment:
+    jobid: 461
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_207.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_207.segmented.npy, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_207.csv
+    shell:
+        python scripts/segement.py /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_207.processed.tiff /home/cstansbu/git_repositories/pip-fucci/config/config.yaml /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_207.segmented.npy /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_207.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+
+[Tue May  9 14:11:47 2023]
+rule segment:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_229.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_229.segmented.npy, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_229.csv
+    jobid: 483
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_229.segmented.npy
+    wildcards: iid=test, tid=229
+    resources: tmpdir=/tmp
+
+[Tue May  9 14:11:47 2023]
+Error in rule segment:
+    jobid: 266
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_12.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_12.segmented.npy, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_12.csv
+    shell:
+        python scripts/segement.py /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_12.processed.tiff /home/cstansbu/git_repositories/pip-fucci/config/config.yaml /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_12.segmented.npy /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_12.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+
+[Tue May  9 14:11:47 2023]
+rule segment:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_34.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_34.segmented.npy, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_34.csv
+    jobid: 288
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_34.segmented.npy
+    wildcards: iid=test, tid=34
+    resources: tmpdir=/tmp
+
+[Tue May  9 14:11:47 2023]
+Error in rule segment:
+    jobid: 427
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_173.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_173.segmented.npy, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_173.csv
+    shell:
+        python scripts/segement.py /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_173.processed.tiff /home/cstansbu/git_repositories/pip-fucci/config/config.yaml /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_173.segmented.npy /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_173.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue May  9 14:11:47 2023]
+Error in rule segment:
+    jobid: 483
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_229.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_229.segmented.npy, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_229.csv
+    shell:
+        python scripts/segement.py /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_229.processed.tiff /home/cstansbu/git_repositories/pip-fucci/config/config.yaml /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_229.segmented.npy /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_229.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+
+[Tue May  9 14:11:47 2023]
+rule segment:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_90.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_90.segmented.npy, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_90.csv
+    jobid: 344
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_90.segmented.npy
+    wildcards: iid=test, tid=90
+    resources: tmpdir=/tmp
+
+
+[Tue May  9 14:11:47 2023]
+rule segment:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_146.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_146.segmented.npy, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_146.csv
+    jobid: 400
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_146.segmented.npy
+    wildcards: iid=test, tid=146
+    resources: tmpdir=/tmp
+
+[Tue May  9 14:11:47 2023]
+Error in rule segment:
+    jobid: 288
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_34.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_34.segmented.npy, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_34.csv
+    shell:
+        python scripts/segement.py /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_34.processed.tiff /home/cstansbu/git_repositories/pip-fucci/config/config.yaml /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_34.segmented.npy /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_34.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue May  9 14:11:47 2023]
+Error in rule segment:
+    jobid: 344
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_90.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_90.segmented.npy, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_90.csv
+    shell:
+        python scripts/segement.py /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_90.processed.tiff /home/cstansbu/git_repositories/pip-fucci/config/config.yaml /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_90.segmented.npy /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_90.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+
+[Tue May  9 14:11:47 2023]
+rule segment:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_202.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_202.segmented.npy, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_202.csv
+    jobid: 456
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_202.segmented.npy
+    wildcards: iid=test, tid=202
+    resources: tmpdir=/tmp
+
+
+[Tue May  9 14:11:47 2023]
+rule segment:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_11.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_11.segmented.npy, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_11.csv
+    jobid: 265
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_11.segmented.npy
+    wildcards: iid=test, tid=11
+    resources: tmpdir=/tmp
+
+[Tue May  9 14:11:47 2023]
+Error in rule segment:
+    jobid: 400
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_146.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_146.segmented.npy, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_146.csv
+    shell:
+        python scripts/segement.py /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_146.processed.tiff /home/cstansbu/git_repositories/pip-fucci/config/config.yaml /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_146.segmented.npy /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_146.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue May  9 14:11:47 2023]
+Error in rule segment:
+    jobid: 456
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_202.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_202.segmented.npy, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_202.csv
+    shell:
+        python scripts/segement.py /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_202.processed.tiff /home/cstansbu/git_repositories/pip-fucci/config/config.yaml /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_202.segmented.npy /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_202.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+
+[Tue May  9 14:11:47 2023]
+rule segment:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_62.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_62.segmented.npy, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_62.csv
+    jobid: 316
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_62.segmented.npy
+    wildcards: iid=test, tid=62
+    resources: tmpdir=/tmp
+
+
+[Tue May  9 14:11:47 2023]
+rule segment:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_118.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_118.segmented.npy, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_118.csv
+    jobid: 372
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_118.segmented.npy
+    wildcards: iid=test, tid=118
+    resources: tmpdir=/tmp
+
+[Tue May  9 14:11:47 2023]
+Error in rule segment:
+    jobid: 265
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_11.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_11.segmented.npy, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_11.csv
+    shell:
+        python scripts/segement.py /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_11.processed.tiff /home/cstansbu/git_repositories/pip-fucci/config/config.yaml /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_11.segmented.npy /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_11.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+
+[Tue May  9 14:11:47 2023]
+rule segment:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_174.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_174.segmented.npy, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_174.csv
+    jobid: 428
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_174.segmented.npy
+    wildcards: iid=test, tid=174
+    resources: tmpdir=/tmp
+
+[Tue May  9 14:11:47 2023]
+Error in rule segment:
+    jobid: 316
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_62.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_62.segmented.npy, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_62.csv
+    shell:
+        python scripts/segement.py /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_62.processed.tiff /home/cstansbu/git_repositories/pip-fucci/config/config.yaml /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_62.segmented.npy /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_62.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+
+[Tue May  9 14:11:47 2023]
+rule segment:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_230.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_230.segmented.npy, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_230.csv
+    jobid: 484
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_230.segmented.npy
+    wildcards: iid=test, tid=230
+    resources: tmpdir=/tmp
+
+[Tue May  9 14:11:47 2023]
+Error in rule segment:
+    jobid: 372
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_118.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_118.segmented.npy, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_118.csv
+    shell:
+        python scripts/segement.py /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_118.processed.tiff /home/cstansbu/git_repositories/pip-fucci/config/config.yaml /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_118.segmented.npy /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_118.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+
+[Tue May  9 14:11:47 2023]
+rule segment:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_63.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_63.segmented.npy, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_63.csv
+    jobid: 317
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_63.segmented.npy
+    wildcards: iid=test, tid=63
+    resources: tmpdir=/tmp
+
+[Tue May  9 14:11:47 2023]
+Error in rule segment:
+    jobid: 428
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_174.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_174.segmented.npy, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_174.csv
+    shell:
+        python scripts/segement.py /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_174.processed.tiff /home/cstansbu/git_repositories/pip-fucci/config/config.yaml /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_174.segmented.npy /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_174.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue May  9 14:11:47 2023]
+Error in rule segment:
+    jobid: 484
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_230.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_230.segmented.npy, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_230.csv
+    shell:
+        python scripts/segement.py /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_230.processed.tiff /home/cstansbu/git_repositories/pip-fucci/config/config.yaml /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_230.segmented.npy /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_230.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue May  9 14:11:47 2023]
+Error in rule segment:
+    jobid: 317
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_63.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_63.segmented.npy, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_63.csv
+    shell:
+        python scripts/segement.py /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test_63.processed.tiff /home/cstansbu/git_repositories/pip-fucci/config/config.yaml /scratch/indikar_root/indikar1/cstansbu/pf-test/segments/test_63.segmented.npy /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation_results/test_63.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2023-05-09T141144.420124.snakemake.log

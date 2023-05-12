@@ -1,0 +1,2 @@
+SyntaxError in file /home/cstansbu/git_repositories/pip-fucci/Snakefile, line 43:
+Unexpected keyword expand in rule definition (Snakefile, line 43)

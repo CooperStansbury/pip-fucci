@@ -1,0 +1,3 @@
+## A file with fastq file paths, and ids
+imageId,FilePath
+test,/nfs/turbo/umms-indikar/shared/projects/wound_healing/data/sync-unsync/20230502-BJPF-sync-A3-20m.ome.tiff

@@ -1,0 +1,30 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 36
+Rules claiming more threads will be scaled down.
+Job stats:
+job        count    min threads    max threads
+-------  -------  -------------  -------------
+all            1              1              1
+segment        1              1              1
+total          2              1              1
+
+Select jobs to execute...
+
+[Wed May 10 09:34:11 2023]
+rule segment:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test.processed.tiff, /home/cstansbu/git_repositories/pip-fucci/config/config.yaml
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test.segmented.tiff, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test.data.csv
+    jobid: 255
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test.segmented.tiff
+    wildcards: iid=test
+    resources: tmpdir=/tmp
+
+Waiting at most 5 seconds for missing files.
+MissingOutputException in rule segment in file /home/cstansbu/git_repositories/pip-fucci/Snakefile, line 84:
+Job 255  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+/scratch/indikar_root/indikar1/cstansbu/pf-test/images/test.segmented.tiff
+/scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test.data.csv
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2023-05-10T093410.056367.snakemake.log

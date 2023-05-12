@@ -1,0 +1,24 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 36
+Rules claiming more threads will be scaled down.
+Job stats:
+job      count    min threads    max threads
+-----  -------  -------------  -------------
+test         1              1              1
+total        1              1              1
+
+Select jobs to execute...
+
+[Mon May  8 09:03:39 2023]
+rule test:
+    input: /nfs/turbo/umms-indikar/shared/projects/wound_healing/data/sync-unsync/20230502-BJPF-sync-A3-20m.ome.tiff
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test.tiff
+    jobid: 0
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test.tiff
+    resources: tmpdir=/tmp
+
+[Mon May  8 09:03:44 2023]
+Finished job 0.
+1 of 1 steps (100%) done
+Complete log: .snakemake/log/2023-05-08T090338.422218.snakemake.log

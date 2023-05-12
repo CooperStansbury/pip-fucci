@@ -1,0 +1,34 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 36
+Rules claiming more threads will be scaled down.
+Job stats:
+job                  count    min threads    max threads
+-----------------  -------  -------------  -------------
+all                      1              1              1
+score_intensities        1              1              1
+total                    2              1              1
+
+Select jobs to execute...
+
+[Wed May 10 15:22:57 2023]
+rule score_intensities:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test.intensities.csv, /scratch/indikar_root/indikar1/cstansbu/pf-test/background/test.raw.background.csv, /scratch/indikar_root/indikar1/cstansbu/pf-test/background/test.raw.ma.background.csv, /scratch/indikar_root/indikar1/cstansbu/pf-test/background/test.processed.background.csv, /scratch/indikar_root/indikar1/cstansbu/pf-test/background/test.processed.ma.background.csv
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test.intensity_scores.csv
+    jobid: 262
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test.intensity_scores.csv
+    wildcards: iid=test
+    resources: tmpdir=/tmp
+
+[Wed May 10 15:22:58 2023]
+Error in rule score_intensities:
+    jobid: 262
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test.intensities.csv, /scratch/indikar_root/indikar1/cstansbu/pf-test/background/test.raw.background.csv, /scratch/indikar_root/indikar1/cstansbu/pf-test/background/test.raw.ma.background.csv, /scratch/indikar_root/indikar1/cstansbu/pf-test/background/test.processed.background.csv, /scratch/indikar_root/indikar1/cstansbu/pf-test/background/test.processed.ma.background.csv
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test.intensity_scores.csv
+    shell:
+        python scripts/scoreIntensity.py /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test.intensities.csv /scratch/indikar_root/indikar1/cstansbu/pf-test/background/test.raw.background.csv /scratch/indikar_root/indikar1/cstansbu/pf-test/background/test.raw.ma.background.csv /scratch/indikar_root/indikar1/cstansbu/pf-test/background/test.processed.background.csv /scratch/indikar_root/indikar1/cstansbu/pf-test/background/test.processed.ma.background.csv /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test.intensity_scores.csv 
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2023-05-10T152254.439754.snakemake.log

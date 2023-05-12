@@ -1,0 +1,7 @@
+KeyError in file /home/cstansbu/git_repositories/pip-fucci/Snakefile, line 25:
+'imageId'
+  File "/home/cstansbu/git_repositories/pip-fucci/Snakefile", line 25, in <module>
+  File "/home/cstansbu/git_repositories/pip-fucci/utils/utils.py", line 16, in getImageOutputPath
+  File "/home/cstansbu/miniconda3/envs/pf/lib/python3.11/site-packages/pandas/core/series.py", line 1007, in __getitem__
+  File "/home/cstansbu/miniconda3/envs/pf/lib/python3.11/site-packages/pandas/core/series.py", line 1116, in _get_value
+  File "/home/cstansbu/miniconda3/envs/pf/lib/python3.11/site-packages/pandas/core/indexes/base.py", line 3654, in get_loc

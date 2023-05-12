@@ -1,0 +1,33 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 36
+Rules claiming more threads will be scaled down.
+Job stats:
+job          count    min threads    max threads
+---------  -------  -------------  -------------
+all              1              1              1
+getImages        1              1              1
+total            2              1              1
+
+Select jobs to execute...
+
+[Mon May  8 09:55:19 2023]
+rule getImages:
+    input: /nfs/turbo/umms-indikar/shared/projects/wound_healing/data/sync-unsync/20230502-BJPF-sync-A3-20m.ome.tiff
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test.tiff
+    jobid: 1
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test.tiff
+    resources: tmpdir=/tmp
+
+[Mon May  8 09:55:21 2023]
+Error in rule getImages:
+    jobid: 1
+    input: /nfs/turbo/umms-indikar/shared/projects/wound_healing/data/sync-unsync/20230502-BJPF-sync-A3-20m.ome.tiff
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test.tiff
+    shell:
+        python scripts/loadImg.py /nfs/turbo/umms-indikar/shared/projects/wound_healing/data/sync-unsync/20230502-BJPF-sync-A3-20m.ome.tiff 2 1 3 /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test.tiff
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2023-05-08T095518.955565.snakemake.log

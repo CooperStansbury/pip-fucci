@@ -1,0 +1,5 @@
+TypeError in file /home/cstansbu/git_repositories/pip-fucci/Snakefile, line 46:
+decoding to str: need a bytes-like object, int found
+  File "/home/cstansbu/git_repositories/pip-fucci/Snakefile", line 46, in <module>
+  File "/home/cstansbu/git_repositories/pip-fucci/Snakefile", line 46, in <listcomp>
+  File "/home/cstansbu/miniconda3/envs/pf/lib/python3.11/re/__init__.py", line 260, in escape

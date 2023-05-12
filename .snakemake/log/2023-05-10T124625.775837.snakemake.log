@@ -1,0 +1,51 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 36
+Rules claiming more threads will be scaled down.
+Job stats:
+job              count    min threads    max threads
+-------------  -------  -------------  -------------
+all                  1              1              1
+getBackground        2              1              1
+total                3              1              1
+
+Select jobs to execute...
+
+[Wed May 10 12:46:27 2023]
+rule getBackground:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test.processed.tiff
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test.processed.background.csv
+    jobid: 259
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test.processed.background.csv
+    wildcards: iid=test, state=processed
+    resources: tmpdir=/tmp
+
+
+[Wed May 10 12:46:29 2023]
+rule getBackground:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test.raw.tiff
+    output: /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test.raw.background.csv
+    jobid: 258
+    reason: Missing output files: /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test.raw.background.csv
+    wildcards: iid=test, state=raw
+    resources: tmpdir=/tmp
+
+[Wed May 10 12:47:07 2023]
+Finished job 258.
+1 of 3 steps (33%) done
+[Wed May 10 12:47:07 2023]
+Finished job 259.
+2 of 3 steps (67%) done
+Select jobs to execute...
+
+[Wed May 10 12:47:07 2023]
+localrule all:
+    input: /scratch/indikar_root/indikar1/cstansbu/pf-test/metadata/test.json, /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test.raw.tiff, /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test.segmented.tiff, /scratch/indikar_root/indikar1/cstansbu/pf-test/images/test.processed.tiff, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test.raw.background.csv, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test.processed.background.csv
+    jobid: 0
+    reason: Input files updated by another job: /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test.raw.background.csv, /scratch/indikar_root/indikar1/cstansbu/pf-test/segmentation/test.processed.background.csv
+    resources: tmpdir=/tmp
+
+[Wed May 10 12:47:07 2023]
+Finished job 0.
+3 of 3 steps (100%) done
+Complete log: .snakemake/log/2023-05-10T124625.775837.snakemake.log
