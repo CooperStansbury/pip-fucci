@@ -12,7 +12,18 @@ rule segment:
     shell:
         "python scripts/segment.py {input.img} {input.config} {output.seg} {output.data} {output.inten}"
         
-        
+
+rule getRawBackground:
+    input:
+        img=OUTPUT + "images/{iid}.raw.tiff", 
+    output:
+        OUTPUT + "background/{iid}.background.raw.csv",
+    wildcard_constraints:
+        iid='|'.join([re.escape(x) for x in set(iids)]),
+    shell:
+        "python scripts/getBackground.py {input.img} {output}"
+
+
 rule getBackground:
     input:
         img=OUTPUT + "images/{iid}.processed.tiff", 
@@ -21,7 +32,7 @@ rule getBackground:
     wildcard_constraints:
         iid='|'.join([re.escape(x) for x in set(iids)]),
     shell:
-        "python scripts/getIntensities.py {input.img} {output}"
+        "python scripts/getBackground.py {input.img} {output}"
         
         
 rule getMaskedBackground:
@@ -33,7 +44,7 @@ rule getMaskedBackground:
     wildcard_constraints:
         iid='|'.join([re.escape(x) for x in set(iids)]),
     shell:
-        "python scripts/getIntensities.py {input.img} {input.seg} {output}"
+        "python scripts/getBackground.py {input.img} {input.seg} {output}"
         
         
 rule score_intensities:

@@ -74,17 +74,14 @@ def getIntesityStats(propTable):
                 't' : row['t'],
                 'c' : c,
                 'label' : row['label'],
-                'mean' : np.nanmean(H),
-                'std' : np.nanstd(H),
-                'size' : H.size,
+                'mean' : np.nanmean(H[:, :, c]),
+                'std' : np.nanstd(H[:, :, c]),
+                'size' : H[:, :, c].size,
             }
             res.append(newRow)
   
     res = pd.DataFrame(res)
     return res
-        
-    
-    
 
 
 def segment(img, config):

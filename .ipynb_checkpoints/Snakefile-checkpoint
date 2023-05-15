@@ -19,6 +19,8 @@ iids, tids = utils.expandImageIds(imageDf)
 ################ RULE FILES ################
 include: "rules/prepare.smk"
 include: "rules/segment.smk"
+include: "rules/track.smk"
+include: "rules/plots.smk"
 
 
 rule all:
@@ -29,35 +31,33 @@ rule all:
         expand(f"{OUTPUT}images/{{imgId}}.processed.tiff", imgId=set(iids)),
         expand(f"{OUTPUT}segmentation/{{imgId}}.intensities.csv", imgId=set(iids)),
         expand(f"{OUTPUT}background/{{imgId}}.background.csv", imgId=set(iids)),
+        expand(f"{OUTPUT}background/{{imgId}}.background.raw.csv", imgId=set(iids)),
         expand(f"{OUTPUT}background/{{imgId}}.masked.background.csv", imgId=set(iids)),
         expand(f"{OUTPUT}segmentation/{{imgId}}.intensity_scores.csv", imgId=set(iids)),
         expand(f"{OUTPUT}tracks/{{imgId}}.tracks.raw.csv", imgId=set(iids)),
         expand(f"{OUTPUT}tracks/{{imgId}}.tracks.full.csv", imgId=set(iids)),
+        expand(f"{OUTPUT}background/{{imgId}}.raw.backgroundplot.png", imgId=set(iids)),
+        expand(f"{OUTPUT}background/{{imgId}}.backgroundplot.png", imgId=set(iids)),
+        expand(f"{OUTPUT}background/{{imgId}}.masked.backgroundplot.png", imgId=set(iids)),
         
-        
-rule track:
+
+
+def makeSegmentationMovie:
     input:
-        btrack=config['btrack']['path'],
         img=OUTPUT + "images/{iid}.processed.tiff",
         seg=OUTPUT + "images/{iid}.segmented.tiff",
-        tconf=config['btrack']['config'],
     output:
-        OUTPUT + "tracks/{iid}.tracks.raw.csv",
-    wildcard_constraints:
-        iid='|'.join([re.escape(x) for x in set(iids)]),
+        OUTPUT + "movies/{iid}.segmented.tiff",
     shell:
-        "python scripts/track.py {input.btrack} {input.img} {input.seg} {input.tconf} {output}"
-        
-        
-rule mergeTrackData:
-    input:
-        tracks=OUTPUT + "tracks/{iid}.tracks.raw.csv",
-        cells=OUTPUT + "segmentation/{iid}.celldata.csv",
-        scores=OUTPUT + "segmentation/{iid}.intensity_scores.csv",
-    output:
-        OUTPUT + "tracks/{iid}.tracks.full.csv",
-    wildcard_constraints:
-        iid='|'.join([re.escape(x) for x in set(iids)]),
-    shell:
-        "python scripts/mergeTrackInfo.py {output} {input}"
-        
+
+# 
+# rule cellCyclePredict:
+#     input:
+#         tracks=OUTPUT + "tracks/{iid}.tracks.full.csv",
+#     output:
+#         OUTPUT + "phase/{iid}.init.preds.csv",
+#     shell:
+#         "python scripts/predictPhase.py {input} {ouput}"
+#         
+#         
+     
