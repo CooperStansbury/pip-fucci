@@ -3,13 +3,14 @@ rule track:
         btrack=config['btrack']['path'],
         img=OUTPUT + "images/{iid}.processed.tiff",
         seg=OUTPUT + "images/{iid}.segmented.tiff",
-        tconf=config['btrack']['config'],
     output:
         OUTPUT + "tracks/{iid}.tracks.raw.csv",
     wildcard_constraints:
-        iid='|'.join([re.escape(x) for x in set(iids)]),
+        iid='|'.join([re.escape(x) for x in set(imageIds)]),
+    params:
+        tconf=config['btrack']['config'],
     shell:
-        "python scripts/track.py {input.btrack} {input.img} {input.seg} {input.tconf} {output}"
+        "python scripts/track.py {input.btrack} {input.img} {input.seg} {params.tconf} {output}"
         
         
 rule mergeTrackData:
@@ -20,7 +21,7 @@ rule mergeTrackData:
     output:
         OUTPUT + "tracks/{iid}.tracks.full.csv",
     wildcard_constraints:
-        iid='|'.join([re.escape(x) for x in set(iids)]),
+        iid='|'.join([re.escape(x) for x in set(imageIds)]),
     shell:
         "python scripts/mergeTrackInfo.py {output} {input}"
         

@@ -11,7 +11,7 @@ from tifffile import imwrite
 def getIntensityImage(img, labels=None):
     """ If labels are passed, the image will be masked at each 
     time point to exclude cell regions from background intensity """
-    t, c, y, x = img.shape
+    c,t, y, x = img.shape
     xy = x * y
     img2 = img.reshape(t, xy, c)
     if labels is None:
@@ -47,23 +47,17 @@ def getIntensityStats(getIntensityImage):
     return res
 
 if __name__ == "__main__":    
-    if len(sys.argv) == 3:
-        imgPath = sys.argv[1]
-        segPath = None
-        outpath = sys.argv[2]
-    elif len(sys.argv) == 4:
-        imgPath = sys.argv[1]
-        segPath = sys.argv[2]
-        outpath = sys.argv[3]
-    
-    
+    imgPath = sys.argv[1]
+    backPath = sys.argv[2]
+
+    # read images
     img = imread(imgPath)
-    if segPath is None:
-        intensityImage = getIntensityImage(img, labels=None)
-        idf = getIntensityStats(intensityImage)
-        idf.to_csv(outpath, index=False)
-    else:
-        labels = imread(segPath)
-        intensityImage = getIntensityImage(img, labels=labels)
-        idf = getIntensityStats(intensityImage)
-        idf.to_csv(outpath, index=False)
+    
+    # get background 
+    intImg = intensityImage = getIntensityImage(img)
+    
+    # get the summary statistics 
+    idf = getIntensityStats(intImg)
+
+    # save files
+    idf.to_csv(backPath, index=False)

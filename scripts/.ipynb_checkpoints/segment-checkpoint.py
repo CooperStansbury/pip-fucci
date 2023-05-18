@@ -102,9 +102,9 @@ def segment(img, config):
     segmentation = []
     
     # safe to assume image structure is (time, channel, y, x)
-    for t in range(len(img)):    
+    for t in range(img.shape[1]):    
         # resturcture the input
-        nucImg = img[t, nChan, :, :].copy()
+        nucImg = img[nChan, t, :, :].copy()
         nucImg = normalize(nucImg)
     
         labels, _ = model.predict_instances(nucImg, 
@@ -112,9 +112,13 @@ def segment(img, config):
                                             nms_thresh=nms_thresh)
         
         print(f"{t=} {len(np.unique(labels))} cells with prob: {prob_thresh}")
-        # get the segmentation metadata
-        intImg = np.swapaxes(img[t, :, :, :].copy().T, 0, 1)    
         
+        # get the intensity frames
+        intImg = img[:, t, :, :].copy()
+        intImg = np.swapaxes(intImg, 0, 2)
+        intImg = np.swapaxes(intImg, 0, 1)
+
+        # get segmentation metadata
         props = regionprops(labels, intensity_image=intImg)
         pdf = getRegionPropsTable(props)
         pdf['t'] = t # temporal id

@@ -61,13 +61,15 @@ def plotBackground(inten, channelMapper, outpath):
 
 
 if __name__ == "__main__":
-    inten = pd.read_csv(sys.argv[1])
+    bk = pd.read_csv(sys.argv[1])
+    
     configPath = sys.argv[2]
+
+    # output paths
     outpath =  sys.argv[3]    
 
     # load the config for any processing params
     config = yaml.safe_load(Path(configPath).read_text())
-    
     
     # define the color scheme from the channel index
     colors = {
@@ -78,10 +80,8 @@ if __name__ == "__main__":
     
     channelMapper = res = dict((v,colors[k]) for k,v in config['channels'].items()) 
     
-    # reformat the background intensities
-    inten = reformatIntensity(inten)
-    
-    # plot the image 
-    plotBackground(inten, channelMapper, outpath)
+    # reformat the background intensities and save
+    bk = reformatIntensity(bk)
+    plotBackground(bk, channelMapper, outpath)
 
     

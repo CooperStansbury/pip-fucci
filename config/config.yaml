@@ -1,20 +1,28 @@
 output_path: "/scratch/indikar_root/indikar1/cstansbu/pf-test/"
-images: "config/imagePaths.txt"
-flattenRGB: True
-downsample_scale_factor: 0.75
+images: "config/testPaths.txt"
 channels:
     nucleus: 1
     red: 0
     green: 2
-preprocessing:
-    bkgnd_radius: 30
-    local_histogram_footprint: -1
-    global_histogram_limit: -1
-    median_radius: -1
+prepare:
+    workers: 8
+    rescale_factor: 0.5
+    bitspersample: 8
+preprocess:
+    workers: 15
+    median_rad: 2
+    adaptive_hist_rad: 30
+    bkgnd_rad: 60
 stardist:
     model: '2D_versatile_fluo'
-    prob_thresh: 0.65
-    nms_thresh: 0.4
+    prob_thresh: 0.4
+    nms_thresh: 0.2
+segmentation_movie:
+    fps: 10
+    dpi: 300
+    height: 10
+    width: 30
+    seg_color: 'k'
 btrack:
     path: "/home/cstansbu/BayesianTracker/"
     config: "config/trackerConfig.json"

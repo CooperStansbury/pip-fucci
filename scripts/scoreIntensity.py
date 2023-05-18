@@ -69,33 +69,24 @@ def testIntensities(cells, background):
         'label',
         'pval',
         'logFoldChange',
-        'name',
+        'mean_cell',
+        'mean_bckgnd',
     ]
     
     return df[keepcols]
     
 
 if __name__ == "__main__":    
-    outpath = sys.argv[1]
-    inten = pd.read_csv(sys.argv[2])
-    
-    # loop through each background condition, 
-    # test the segmentations against raw and processed
-    states = ["total", "masked"]
-    indices = [3, 4] 
-    
-    res = []
-    
-    for i, name in zip(indices, states):
-        idf = pd.read_csv(sys.argv[i])
-        idf['name'] = name
-        scores = testIntensities(inten, idf)
-        res.append(scores)
-        
-    # create and save output    
-    res = pd.concat(res)    
-    res.to_csv(outpath, index=False)
-        
+    inten = pd.read_csv(sys.argv[1])
+
+    # read background files
+    bk = pd.read_csv(sys.argv[2])
+
+    outpath = sys.argv[3]
+
+    # normal background
+    scores = testIntensities(inten, bk)
+    scores.to_csv(outpath, index=False)
 
     
  

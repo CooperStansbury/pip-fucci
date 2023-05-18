@@ -1,0 +1,4 @@
+## A file with fastq file paths, and ids
+imageId,FilePath
+D3,/nfs/turbo/umms-indikar/shared/projects/wound_healing/data/test/D3.tiff
+B2,/nfs/turbo/umms-indikar/shared/projects/wound_healing/data/test/B2.tiff

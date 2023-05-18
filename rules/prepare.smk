@@ -1,63 +1,50 @@
-# extract the metadata 
+rule getRawImages:
+    input:
+        imgs=imageDf['FilePath'].to_list()
+    output:
+        expand(f"{OUTPUT}images/{{iid}}.raw.tiff", iid=imageIds)
+    wildcard_constraints:
+        iid='|'.join([re.escape(x) for x in set(imageIds)]),
+    run:
+        from shutil import copyfile
+        for i, imgPath in enumerate(input.imgs):
+            outPath = output[i]
+            copyfile(imgPath, outPath)
+
+
 rule getMetaData:
     input:
-        imageDf['FilePath'].to_list()
+        OUTPUT + "images/{iid}.raw.tiff"
     output:
-        utils.getImageMetadataPath(imageDf, OUTPUT)
+        OUTPUT + "metadata/{iid}.metadata.json"
+    wildcard_constraints:
+        iid='|'.join([re.escape(x) for x in set(imageIds)]),
     shell:
         "python scripts/getMetadata.py {input} {output}"
         
-# load images and split on time pionts 
-# so each has an independant job
-rule getImages:
-    input:
-        imgs=imageDf['FilePath'].to_list(),
-        config=str(BASE_DIR) + "/config/config.yaml"
-    output:
-        temp(expand(f"{OUTPUT}images/{{imgId}}_{{tid}}.raw.tiff", zip, imgId=iids, tid=tids))
-    wildcard_constraints:
-        iid='|'.join([re.escape(x) for x in set(iids)]),
-        tid='|'.join([re.escape(str(x)) for x in set(tids)]),
-    shell:
-        "python scripts/loadImg.py {input.imgs} {input.config} {output}"
-        
-        
-# prepare images for segmentation
-rule preprocess:
-    input:
-        img=OUTPUT + "images/{iid}_{tid}.raw.tiff",
-        config=str(BASE_DIR) + "/config/config.yaml",
-    output:
-        imgs=temp(OUTPUT + "images/{iid}_{tid}.processed.tiff"),
-    wildcard_constraints:
-        iid='|'.join([re.escape(x) for x in set(iids)]),
-        tid='|'.join([re.escape(str(x)) for x in set(tids)]),
-    shell:
-        "python scripts/preprocess.py {input.img} {input.config} {output.imgs}"
-        
 
-# gather split files into single, sorted tiffs 
-rule mergeRaw:
-    input:        
-        imgs=expand(f"{OUTPUT}images/{{imgId}}_{{tid}}.raw.tiff", zip, imgId=iids, tid=tids),
+rule prepareImage:
+    input:
+        img=OUTPUT + "images/{iid}.raw.tiff",
     output:
-        OUTPUT + "images/{iid}.raw.tiff"
+        OUTPUT + "images/{iid}.prepared.tiff"
+    params:
+        config=str(BASE_DIR) + "/config/config.yaml"
     wildcard_constraints:
-        iid='|'.join([re.escape(x) for x in set(iids)]),
-        tid='|'.join([re.escape(str(x)) for x in set(tids)]),
+        iid='|'.join([re.escape(x) for x in set(imageIds)]),
     shell:
-        "python scripts/mergeTiff.py {output} {input}"
-        
-        
-rule mergeProcessed:
-    input:        
-        imgs=expand(f"{OUTPUT}images/{{imgId}}_{{tid}}.processed.tiff", zip, imgId=iids, tid=tids),
+        "python scripts/prepareImage.py {input.img} {params.config} {output}"
+
+    
+# prepare images for segmentation
+rule preprocessImage:
+    input:
+        img=OUTPUT + "images/{iid}.prepared.tiff",
     output:
         OUTPUT + "images/{iid}.processed.tiff"
+    params:
+        config=str(BASE_DIR) + "/config/config.yaml"
     wildcard_constraints:
-        iid='|'.join([re.escape(x) for x in set(iids)]),
-        tid='|'.join([re.escape(str(x)) for x in set(tids)]),
+        iid='|'.join([re.escape(x) for x in set(imageIds)]),
     shell:
-        "python scripts/mergeTiff.py {output} {input}"
-        
-        
+        "python scripts/processImage.py {input.img} {params.config} {output}"

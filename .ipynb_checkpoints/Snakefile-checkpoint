@@ -14,7 +14,12 @@ configfile: str(BASE_DIR) + "/config/config.yaml"
 OUTPUT = config['output_path']
 imagePath = os.path.abspath(config['images'])
 imageDf = utils.getImages(imagePath)
-iids, tids = utils.expandImageIds(imageDf)
+imageIds = imageDf['imageId'].unique()
+
+
+# global vars
+STAGES = ['prepared', 'processed']
+
 
 ################ RULE FILES ################
 include: "rules/prepare.smk"
@@ -25,32 +30,23 @@ include: "rules/plots.smk"
 
 rule all:
     input:
-        expand(f"{OUTPUT}metadata/{{imgId}}.json", imgId=set(iids)),
-        expand(f"{OUTPUT}images/{{imgId}}.raw.tiff", imgId=set(iids)),
-        expand(f"{OUTPUT}images/{{imgId}}.segmented.tiff", imgId=set(iids)),
-        expand(f"{OUTPUT}images/{{imgId}}.processed.tiff", imgId=set(iids)),
-        expand(f"{OUTPUT}segmentation/{{imgId}}.intensities.csv", imgId=set(iids)),
-        expand(f"{OUTPUT}background/{{imgId}}.background.csv", imgId=set(iids)),
-        expand(f"{OUTPUT}background/{{imgId}}.background.raw.csv", imgId=set(iids)),
-        expand(f"{OUTPUT}background/{{imgId}}.masked.background.csv", imgId=set(iids)),
-        expand(f"{OUTPUT}segmentation/{{imgId}}.intensity_scores.csv", imgId=set(iids)),
-        expand(f"{OUTPUT}tracks/{{imgId}}.tracks.raw.csv", imgId=set(iids)),
-        expand(f"{OUTPUT}tracks/{{imgId}}.tracks.full.csv", imgId=set(iids)),
-        expand(f"{OUTPUT}background/{{imgId}}.raw.backgroundplot.png", imgId=set(iids)),
-        expand(f"{OUTPUT}background/{{imgId}}.backgroundplot.png", imgId=set(iids)),
-        expand(f"{OUTPUT}background/{{imgId}}.masked.backgroundplot.png", imgId=set(iids)),
+        expand(f"{OUTPUT}images/{{imgId}}.raw.tiff", imgId=imageIds),
+        expand(f"{OUTPUT}images/{{imgId}}.prepared.tiff", imgId=imageIds),
+        expand(f"{OUTPUT}images/{{imgId}}.processed.tiff", imgId=imageIds),
+        expand(f"{OUTPUT}metadata/{{imgId}}.metadata.json", imgId=imageIds),
+        expand(f"{OUTPUT}images/{{imgId}}.segmented.tiff", imgId=set(imageIds)),
+        expand(f"{OUTPUT}segmentation/{{imgId}}.intensities.csv", imgId=set(imageIds)),
+        expand(f"{OUTPUT}background/{{imgId}}.{{stage}}.background.csv", imgId=set(imageIds), stage=STAGES),
+        expand(f"{OUTPUT}backgroundPlots/{{imgId}}.{{stage}}.png", imgId=set(imageIds), stage=STAGES),
+        expand(f"{OUTPUT}segmentation/{{imgId}}.{{stage}}.scores.csv", imgId=set(imageIds), stage=STAGES),
+        expand(f"{OUTPUT}movies/{{imgId}}.segmentation.gif", imgId=set(imageIds)),
+        expand(f"{OUTPUT}tracks/{{imgId}}.tracks.raw.csv", imgId=set(imageIds)),
+        # expand(f"{OUTPUT}tracks/{{imgId}}.tracks.full.csv", imgId=set(imageIds)),
+        # expand(f"{OUTPUT}background/{{imgId}}.backgroundplot.png", imgId=set(imageIds)),
+        # expand(f"{OUTPUT}background/{{imgId}}.masked.backgroundplot.png", imgId=set(imageIds)),
+        # OUTPUT + "movies/test.segmented.tiff",
         
 
-
-def makeSegmentationMovie:
-    input:
-        img=OUTPUT + "images/{iid}.processed.tiff",
-        seg=OUTPUT + "images/{iid}.segmented.tiff",
-    output:
-        OUTPUT + "movies/{iid}.segmented.tiff",
-    shell:
-
-# 
 # rule cellCyclePredict:
 #     input:
 #         tracks=OUTPUT + "tracks/{iid}.tracks.full.csv",
