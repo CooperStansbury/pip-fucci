@@ -72,12 +72,8 @@ if __name__ == "__main__":
     segmentation = imread(segPath)
     img = imread(imgPath)
     
-    # reformat img to channel last
-    img = np.swapaxes(img, 1, 3)
-    img = np.swapaxes(img, 1, 2)
-    
-    print(f"{segmentation.shape=}")
-    print(f"{img.shape=}")
+    # # reformat img to channel last
+    img = np.moveaxis(img, 0, 3)
     
     # build objects
     objects = buildTrackObjects(segmentation, img)

@@ -26,4 +26,11 @@ segmentation_movie:
 btrack:
     path: "/home/cstansbu/BayesianTracker/"
     config: "config/trackerConfig.json"
+phase:
+    alpha: 0.05
+    phase_map: 
+        G1: "110"
+        S: "111"
+        G2: "011"
+
     

@@ -37,23 +37,25 @@ rule all:
         expand(f"{OUTPUT}images/{{imgId}}.segmented.tiff", imgId=set(imageIds)),
         expand(f"{OUTPUT}segmentation/{{imgId}}.intensities.csv", imgId=set(imageIds)),
         expand(f"{OUTPUT}background/{{imgId}}.{{stage}}.background.csv", imgId=set(imageIds), stage=STAGES),
-        expand(f"{OUTPUT}backgroundPlots/{{imgId}}.{{stage}}.png", imgId=set(imageIds), stage=STAGES),
+        expand(f"{OUTPUT}plots/{{imgId}}.{{stage}}.background.png", imgId=set(imageIds), stage=STAGES),
         expand(f"{OUTPUT}segmentation/{{imgId}}.{{stage}}.scores.csv", imgId=set(imageIds), stage=STAGES),
         expand(f"{OUTPUT}movies/{{imgId}}.segmentation.gif", imgId=set(imageIds)),
         expand(f"{OUTPUT}tracks/{{imgId}}.tracks.raw.csv", imgId=set(imageIds)),
-        # expand(f"{OUTPUT}tracks/{{imgId}}.tracks.full.csv", imgId=set(imageIds)),
-        # expand(f"{OUTPUT}background/{{imgId}}.backgroundplot.png", imgId=set(imageIds)),
-        # expand(f"{OUTPUT}background/{{imgId}}.masked.backgroundplot.png", imgId=set(imageIds)),
-        # OUTPUT + "movies/test.segmented.tiff",
+        expand(f"{OUTPUT}tracks/{{imgId}}.tracks.full.csv", imgId=set(imageIds)),
+        expand(f"{OUTPUT}phase/{{imgId}}.init.preds.csv", imgId=set(imageIds)),
         
 
-# rule cellCyclePredict:
-#     input:
-#         tracks=OUTPUT + "tracks/{iid}.tracks.full.csv",
-#     output:
-#         OUTPUT + "phase/{iid}.init.preds.csv",
-#     shell:
-#         "python scripts/predictPhase.py {input} {ouput}"
-#         
-#         
-     
+rule cellCyclePredict:
+    input:
+        tracks=OUTPUT + "tracks/{iid}.tracks.full.csv",
+    output:
+        OUTPUT + "phase/{iid}.init.preds.csv",
+    wildcard_constraints:
+        iid='|'.join([re.escape(x) for x in set(imageIds)]),
+    params:
+        config=str(BASE_DIR) + "/config/config.yaml",
+    shell:
+        "python scripts/predictPhase.py {input} {params.config} {output}"
+        
+        
+   

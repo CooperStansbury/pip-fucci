@@ -12,16 +12,17 @@ rule track:
     shell:
         "python scripts/track.py {input.btrack} {input.img} {input.seg} {params.tconf} {output}"
         
-        
+
 rule mergeTrackData:
     input:
         tracks=OUTPUT + "tracks/{iid}.tracks.raw.csv",
         cells=OUTPUT + "segmentation/{iid}.celldata.csv",
-        scores=OUTPUT + "segmentation/{iid}.intensity_scores.csv",
+        presc=OUTPUT + "segmentation/{iid}.prepared.scores.csv",
+        procsc=OUTPUT + "segmentation/{iid}.processed.scores.csv",
     output:
         OUTPUT + "tracks/{iid}.tracks.full.csv",
     wildcard_constraints:
         iid='|'.join([re.escape(x) for x in set(imageIds)]),
     shell:
-        "python scripts/mergeTrackInfo.py {output} {input}"
+        "python scripts/mergeTrackData.py {input.tracks} {input.cells} {input.presc} {input.procsc} {output}"
         

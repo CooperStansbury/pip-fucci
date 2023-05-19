@@ -2,7 +2,7 @@ rule plotBackground:
     input:
         OUTPUT + "background/{iid}.{stage}.background.csv",
     output:
-        OUTPUT + "backgroundPlots/{iid}.{stage}.png"
+        OUTPUT + "plots/{iid}.{stage}.background.png"
     wildcard_constraints:
         iid='|'.join([re.escape(x) for x in set(imageIds)]),
         stage='prepared|processed'
