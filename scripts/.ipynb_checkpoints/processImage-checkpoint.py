@@ -84,16 +84,15 @@ if __name__ == "__main__":
 
     # make sure that the transformed range (0, 255) is encoded
     # so that it can be properly compressed!
-    newImg = np.asarray([x[1] for x in result], dtype='uint8')
+    newImg = np.asarray([x[1] for x in result], dtype='uint16')
     newImg = np.swapaxes(newImg, 0, 1) # swap the time and channel axis
 
     # save output
     imwrite(outpath, 
             newImg, 
             bigtiff=True,
-            photometric='rgb',
             compression='lzw',
-            bitspersample=config['prepare']['bitspersample'],
+            bitspersample=config['preprocess']['bitspersample'],
            )
     
     

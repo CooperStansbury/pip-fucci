@@ -1,4 +1,4 @@
-output_path: "/scratch/indikar_root/indikar1/cstansbu/pf-test/"
+output_path: "/scratch/indikar_root/indikar1/cstansbu/pf-test-2/"
 images: "config/testPaths.txt"
 channels:
     nucleus: 1
@@ -7,12 +7,13 @@ channels:
 prepare:
     workers: 8
     rescale_factor: 0.5
-    bitspersample: 8
+    bitspersample: 16
 preprocess:
     workers: 15
     median_rad: 2
     adaptive_hist_rad: 30
     bkgnd_rad: 60
+    bitspersample: 16
 stardist:
     model: '2D_versatile_fluo'
     prob_thresh: 0.4

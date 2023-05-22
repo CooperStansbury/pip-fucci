@@ -24,20 +24,24 @@ def getIntensityImage(img, labels=None):
         return img2
     
     
-def getIntensityStats(getIntensityImage):
-    """A function to compute mean, std for each time point"""
+def getIntensityStats(intImg):
+    """A function to compute mean, std for each time point.
+    
+    NOTE: expects:
+        (channel, time, y, x)
+    """
     
     res = []
     
-    for t in range(getIntensityImage.shape[0]):
-        for c in range(getIntensityImage.shape[2]):
-                H = getIntensityImage[t, :, c]
+    for t in range(intImg.shape[1]):
+        for c in range(intImg.shape[0]):
+                H = intImg[c, t, :, :]
                 
                 row = {
                     't' : t,
                     'c' : c,
-                    'mean' : np.nanmean(H),
-                    'std' : np.nanstd(H),
+                    'mean' : np.mean(H),
+                    'std' : np.std(H),
                     'size' : H.size,
                 }
 
@@ -52,12 +56,16 @@ if __name__ == "__main__":
 
     # read images
     img = imread(imgPath)
-    
-    # get background 
-    intImg = intensityImage = getIntensityImage(img)
+    print(f"{img.shape=}")
+
+    """DEPRECATED: do not need the full distribution anymore,
+    too slow and summmary stats suffice """
+    # # get background 
+    # intImg = getIntensityImage(img)
+    # print(f"{intImg.shape=}")
     
     # get the summary statistics 
-    idf = getIntensityStats(intImg)
+    idf = getIntensityStats(img)
 
     # save files
     idf.to_csv(backPath, index=False)

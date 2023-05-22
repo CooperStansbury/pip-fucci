@@ -24,7 +24,6 @@ def getCircularity(region):
     else: 
         circularity = 0
     return circularity
-    
 
 def getRegionPropsTable(properties, intensities=True):
     """A function to get the region props for multiple segmentations"""
@@ -107,10 +106,10 @@ def segment(img, config):
         nucImg = img[nChan, t, :, :].copy()
         nucImg = normalize(nucImg)
     
-        labels, _ = model.predict_instances(nucImg, 
+        labels, data = model.predict_instances(nucImg, 
                                             prob_thresh=prob_thresh,
                                             nms_thresh=nms_thresh)
-        
+
         print(f"{t=} {len(np.unique(labels))} cells with prob: {prob_thresh}")
         
         # get the intensity frames
@@ -122,6 +121,10 @@ def segment(img, config):
         props = regionprops(labels, intensity_image=intImg)
         pdf = getRegionPropsTable(props)
         pdf['t'] = t # temporal id
+
+        # merge in the probabilities
+        pdf = pdf.sort_values(by='label')
+        pdf['prob'] = data['prob']
         
         propTable.append(pdf)
         segmentation.append(labels)

@@ -60,6 +60,7 @@ def mergeCellData(tracks, cells):
         'c1_intensity_mean',
         'c2_intensity_mean',
         'label',
+        'prob',
         'orientation', 
         'perimeter',
         'solidity', 
