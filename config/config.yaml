@@ -1,5 +1,5 @@
-output_path: "/scratch/indikar_root/indikar1/cstansbu/pf-test-2/"
-images: "config/testPaths.txt"
+output_path: "/scratch/indikar_root/indikar1/cstansbu/woundHealing/"
+images: "config/woundPaths.txt"
 channels:
     nucleus: 1
     red: 0

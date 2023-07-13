@@ -1,0 +1,14 @@
+## A file with fastq file paths, and ids
+imageId,FilePath
+L1,/nfs/turbo/umms-indikar/shared/projects/wound_healing/data/062023_WHp3/2023-06-02-WHp3-B1-line-LD-30m.ome.tiff
+L2,/nfs/turbo/umms-indikar/shared/projects/wound_healing/data/062023_WHp3/2023-06-02-WHp3-B2-line-LD-30m.ome.tiff
+L3,/nfs/turbo/umms-indikar/shared/projects/wound_healing/data/062023_WHp3/2023-06-02-WHp3-C2-line-HD-30m.ome.tiff
+L4,/nfs/turbo/umms-indikar/shared/projects/wound_healing/data/062023_WHp3/2023-06-02-WHp3-C1-line-HD-30m.ome.tiff
+CX1,/nfs/turbo/umms-indikar/shared/projects/wound_healing/data/062023_WHp3/2023-06-02-WHp3-B3-cross-LD-30m.ome.tiff
+CX2,/nfs/turbo/umms-indikar/shared/projects/wound_healing/data/062023_WHp3/2023-06-02-WHp3-B4-cross-LD-30m.ome.tiff
+CX3,/nfs/turbo/umms-indikar/shared/projects/wound_healing/data/062023_WHp3/2023-06-02-WHp3-C4-cross-HD-30m.ome.tiff
+CX4,/nfs/turbo/umms-indikar/shared/projects/wound_healing/data/062023_WHp3/2023-06-02-WHp3-C3-cross-HD-30m.ome.tiff
+C1,/nfs/turbo/umms-indikar/shared/projects/wound_healing/data/062023_WHp3/2023-06-02-WHp3-C5-circle-HD-30m.ome.tiff
+C2,/nfs/turbo/umms-indikar/shared/projects/wound_healing/data/062023_WHp3/2023-06-02-WHp3-C6-circle-HD-30m.ome.tiff
+C3,/nfs/turbo/umms-indikar/shared/projects/wound_healing/data/062023_WHp3/2023-06-02-WHp3-B6-circle-LD-30m.ome.tiff
+C4,/nfs/turbo/umms-indikar/shared/projects/wound_healing/data/062023_WHp3/2023-06-02-WHp3-B5-circle-LD-30m.ome.tiff

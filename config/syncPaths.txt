@@ -1,0 +1,10 @@
+## A file with fastq file paths, and ids
+imageId,FilePath
+C2,/nfs/turbo/umms-indikar/shared/projects/wound_healing/data/Sync-unsync-48hr/BJPFunsync-C2-20m-48hr.ome.tiff
+B2,/nfs/turbo/umms-indikar/shared/projects/wound_healing/data/Sync-unsync-48hr/BJPFunsync-B2-20m-48hr.ome.tiff
+D3,/nfs/turbo/umms-indikar/shared/projects/wound_healing/data/Sync-unsync-48hr/BJPFsync-D3-20m-48hr.ome.tiff
+A2,/nfs/turbo/umms-indikar/shared/projects/wound_healing/data/Sync-unsync-48hr/BJPFunsync-A2-20m-48hr.ome.tiff
+D2,/nfs/turbo/umms-indikar/shared/projects/wound_healing/data/Sync-unsync-48hr/BJPFunsync-D2-20m-48hr.ome.tiff
+A3,/nfs/turbo/umms-indikar/shared/projects/wound_healing/data/Sync-unsync-48hr/BJPFsync-A3-20m-48hr.ome.tiff
+B3,/nfs/turbo/umms-indikar/shared/projects/wound_healing/data/Sync-unsync-48hr/BJPFsync-B3-20m-48hr.ome.tiff
+C3,/nfs/turbo/umms-indikar/shared/projects/wound_healing/data/Sync-unsync-48hr/BJPFsync-C3-20m-48hr.ome.tiff
