@@ -251,6 +251,7 @@ def relabel_sequential(label_field, offset=1):
     This function also returns the forward map (mapping the original labels to
     the reduced labels) and the inverse map (mapping the reduced labels back
     to the original ones).
+    
     Parameters
     ----------
     label_field : numpy array of int, arbitrary shape

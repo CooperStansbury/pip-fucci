@@ -19,7 +19,32 @@ from sklearn.ensemble import RandomForestClassifier
 from functools import partial
 import matplotlib.animation as animation
 import networkx as nx
+import skimage
 from tifffile import imread
+
+
+def quick_threshold(img, n_classes, target_classes):
+    """A simple function to threshold an image 
+
+    Params:
+    ------------
+    img (np.array):
+        The input image
+    n_classes (int):
+        number of classes for the multi-ostu thresholding
+    target_classes (list of int):
+        The class values of interest
+        
+    Returns:
+    ------------
+    newImg (np.array):
+        Binary thresholded image
+    """
+    bins = skimage.filters.threshold_multiotsu(image=img, 
+                                               classes=n_classes)
+    newImg = np.digitize(img, bins=bins)
+    newImg = np.where(np.isin(newImg, target_classes), 1, 0)
+    return newImg
 
 
 def get_wound_area(img, foot=skimage.morphology.square, t=0.5, q=2, dilation=[20, 10, 15]):
