@@ -1,0 +1,23 @@
+## A file with fastq file paths, and ids
+imageId,FilePath
+A1,/nfs/turbo/umms-indikar/shared/projects/wound_healing/TGFB_images/20230720-TGFB-Wound-C5-30m.ome.tiff
+A2,/nfs/turbo/umms-indikar/shared/projects/wound_healing/TGFB_images/20230720-TGFB-Wound-C4-30m.ome.tiff
+A3,/nfs/turbo/umms-indikar/shared/projects/wound_healing/TGFB_images/20230720-TGFB-Wound-C6-30m.ome.tiff
+B1,/nfs/turbo/umms-indikar/shared/projects/wound_healing/TGFB_images/20230720-NoTGFB-Wound-C2-30m.ome.tiff
+B2,/nfs/turbo/umms-indikar/shared/projects/wound_healing/TGFB_images/20230720-NoTGFB-Wound-C1-30m.ome.tiff
+B3,/nfs/turbo/umms-indikar/shared/projects/wound_healing/TGFB_images/20230720-NoTGFB-Wound-C3-30m.ome.tiff
+C1,/nfs/turbo/umms-indikar/shared/projects/wound_healing/TGFB_images/20230720-NoTGFB-NoWound-B1-30m.ome.tiff
+C2,/nfs/turbo/umms-indikar/shared/projects/wound_healing/TGFB_images/20230720-NoTGFB-NoWound-B3-30m.ome.tiff
+D1,/nfs/turbo/umms-indikar/shared/projects/wound_healing/TGFB_images/20230720-TGFB-NoWound-B5-30m.ome.tiff
+D2,/nfs/turbo/umms-indikar/shared/projects/wound_healing/TGFB_images/20230720-TGFB-NoWound-B4-30m.ome.tiff
+D3,/nfs/turbo/umms-indikar/shared/projects/wound_healing/TGFB_images/20230720-TGFB-NoWound-B6-30m.ome.tiff
+
+
+
+
+
+
+
+
+
+
