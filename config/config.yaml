@@ -1,5 +1,5 @@
 output_path: "/scratch/indikar_root/indikar1/cstansbu/tgfb_wound/"
-images: "config/woundPaths.txt"
+images: "config/tgfbPaths.txt"
 channels:
     nucleus: 1
     red: 0
